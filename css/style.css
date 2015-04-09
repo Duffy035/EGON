@@ -1,0 +1,49 @@
+.nav{
+	margin:auto;
+	width:600px;
+}
+
+.navbar{
+	border-bottom-left-radius:0px;
+	background-color: #486042;
+	margin-bottom: 0px;	
+	border-style: none;
+}
+.navbar-default .navbar-nav li a{
+	color: yellow;
+}
+
+
+.subnav{
+	margin-top: 0px;
+	padding-top: 20px;
+	background-color: #486042;
+	width: 150px;
+	float: left;
+	height: 99%;
+	position:absolute;
+}
+
+.subnav a{
+	color:yellow;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+.subnav a:hover{
+	color:black;
+}
+
+#login{
+	float: right;
+}
+
+.content{
+	padding-top: 70px;
+	width: 50%;
+	margin:auto;
+}
+.col-md-4{
+	border: 1px solid;
+	border-radius: 5px;
+}
