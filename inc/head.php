@@ -12,8 +12,10 @@
 
 <body>
 <div class="container">
+<div class="head">
 	Här kommer logga!
 	<div id="login">
 		<a href="#">Logga in/Registrera</a>
 	</div>
+</div>
 </div>

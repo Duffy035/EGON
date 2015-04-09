@@ -1,31 +1,30 @@
+.head{
+	background-color: #3E3101;
+}
 .nav{
 	margin:auto;
 	width:600px;
 }
 
 .navbar{
-	border-bottom-left-radius:0px;
-	background-color: #486042;
+	border-radius: 0px;
+	background: linear-gradient(#151000, #555500);
 	margin-bottom: 0px;	
 	border-style: none;
 }
 .navbar-default .navbar-nav li a{
-	color: yellow;
+	color:#FAC905;
 }
 
 
 .subnav{
-	margin-top: 0px;
 	padding-top: 20px;
-	background-color: #486042;
-	width: 150px;
 	float: left;
-	height: 99%;
-	position:absolute;
+	
 }
 
 .subnav a{
-	color:yellow;
+	color:#FFCC00;
 	margin-left: 10px;
 	text-decoration: none;
 }
@@ -39,11 +38,13 @@
 }
 
 .content{
-	padding-top: 70px;
-	width: 50%;
-	margin:auto;
+	background-color:#373700;
 }
-.col-md-4{
-	border: 1px solid;
-	border-radius: 5px;
+
+.thumbnail{
+	background-color: #86722D;
+	border-color:#FFCC00;
+}
+.caption h3, p{
+	color: #E6E6E6;
 }

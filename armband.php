@@ -9,9 +9,7 @@
 		<a href="#">Type 1 Cord</a><br>
 	</div>	
 	
-	<div class="content"> <!--kolla på bootstrap och använd colummer för att skapa produkt rutor-->
-		Här kommer lite bilder och skit!
-	</div>
+	
 		
 
 </div>
