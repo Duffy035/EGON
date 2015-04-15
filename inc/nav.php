@@ -19,7 +19,7 @@
         <li><a href="index.php">Hem</a></li>
       	<li><a href="armband.php">Armband</a></li>
 		<li><a href="hund.php">Hund</a></li>
-		<li><a href="#">Nyckelringar</a></li>
+		<li><a href="ovrigt.php">Övrigt</a></li>
 		<li><a href="#">Färg & stoleks guide</a></li>
 		<li><a href="kontakt.php">Kontakt</a></li>
       </ul>      

@@ -4,17 +4,13 @@
 
 <div class="container">
 	<div class="content">
-		<div class="subnav">
-			<a href="#">5.50 Cord</a><br>
-			<a href="#">Type 1 Cord</a><br>
-		</div>
 		<div class="row">
 			<div class="col-xs-6 col-md-3">
 		    	<div class="thumbnail">
 		      		<img src="img/bild.jpg" alt="...">
 			     		<div class="caption">
 			        		<h3>Thumbnail label</h3>
-			        		<p>Halvstryp hej på deig mycket text tackarrrrr</p>
+			        		<p>Övriga produkter</p>
 			        		<p><a href="#" class="btn btn-primary" role="button">Läs mer</a> <a href="#" class="btn btn-default" role="button">Köp</a></p>
 			      		</div>
 			 	</div>

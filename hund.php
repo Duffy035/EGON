@@ -9,7 +9,7 @@
 			<a href="#">Koppel</a><br>
 		</div>		
 		<div class="row">
-		  <div class="col-sm-6 col-md-4">
+		  <div class="col-xs-6 col-md-3">
 		    <div class="thumbnail">
 		      <img src="img/bild.jpg" alt="...">
 		      <div class="caption">
