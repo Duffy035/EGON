@@ -7,7 +7,7 @@
 		<div class="row">
 			<div class="col-xs-6 col-md-3">
 		    	<div class="thumbnail">
-		      		<img src="img/bild.jpg" alt="...">
+		      		<img id="ovrigt" src="img/bild.jpg" alt="...">
 			     		<div class="caption">
 			        		<h3>Thumbnail label</h3>
 			        		<p>Övriga produkter</p>

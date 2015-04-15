@@ -6,7 +6,7 @@
 	<div class="content">
 		<div class="subnav">
 			<a href="halsband.php">Halsband</a><br>
-			<a href="#">Koppel</a><br>
+			<a href="koppel.php">Koppel</a><br>
 		</div>		
 		<div class="row">
 		  <div class="col-xs-6 col-md-3">
