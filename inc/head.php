@@ -13,7 +13,7 @@
 <body>
 <div class="container">
 <div class="head">
-	Här kommer logga!
+	<img id="logga" src="img/logga.png">
 	<div id="login">
 		<a href="#">Logga in/Registrera</a>
 	</div>
