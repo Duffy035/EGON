@@ -14,7 +14,7 @@
 		      		<img src="img/bild.jpg" alt="...">
 			     		<div class="caption">
 			        		<h3>Thumbnail label</h3>
-			        		<p>Halvstryp hej på deig mycket text tackarrrrr</p>
+			        		<p>TYPE 1 CORD SÄLJES TACKARRR</p>
 			        		<p><a href="#" class="btn btn-primary" role="button">Läs mer</a> <a href="#" class="btn btn-default" role="button">Köp</a></p>
 			      		</div>
 			 	</div>
