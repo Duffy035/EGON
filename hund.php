@@ -5,7 +5,7 @@
 <div class="container">
 	<div class="content">
 		<div class="subnav">
-			<a href="#">Halsband</a><br>
+			<a href="halsband.php">Halsband</a><br>
 			<a href="#">Koppel</a><br>
 		</div>		
 		<div class="row">
