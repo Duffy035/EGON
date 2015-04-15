@@ -13,10 +13,13 @@
 
 <body>
 <div class="container">
-<div class="head">
-	<img id="logga" src="img/logga.png">
-	<div id="login">
-		<a href="#">Logga in/Registrera</a>
+	<div class="head">
+		<img id="logga" src="img/logga.png">
+			<div id="banner">
+				<p> Paracord Fashion</p>
+			</div>
+			<div id="login">
+				<a href="#">Logga in/Registrera</a>
+			</div>
 	</div>
-</div>
 </div>
