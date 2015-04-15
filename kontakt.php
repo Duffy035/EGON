@@ -3,14 +3,17 @@
 <?php include'inc/nav.php'; ?> 
 <div class="container">
 	<div class="content">	
-		<form action="kontakt.php" method="post">
-			<input type="text" name="name" placeholder="Namn">
-			<br>
-			<br>
-			<textarea name="msg" placeholder="Meddelande"></textarea>
-			<br>
-			<input class="btn btn-default" type="submit" value="Skicka">
-		</form>
+		<div class="mail">
+			<p> Skriv ett mail till mig om du har något du vill förtälja!</p>
+			<form action="kontakt.php" method="post">
+				<input type="text" name="name" placeholder="Namn">
+				<br>
+				<br>
+				<textarea name="msg" placeholder="Meddelande"></textarea>
+				<br>
+				<input class="btn btn-default" type="submit" value="Skicka">
+			</form>
+		</div>
 
 <?php
 
