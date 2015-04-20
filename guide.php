@@ -31,5 +31,6 @@
 				  		</div>
 					</div>
 				</div>
+			<!--För att Du skall få ett armband som passar perfekt så skall du göra följande: Mät med ett måttband tight runt den handled du vill ha ditt armband. Sedan väljer du det måttet i rullistan när du beställer. Vi kommer att lägga till den mängd så att ditt armband sitter perfekt. -->
 	</body>
 </html>
