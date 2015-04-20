@@ -15,28 +15,35 @@
 					<a href="img/img4.png" data-lightbox="Bilder" data-title="Ny SM-mästare: Malin Skoghag"><img src="img/img4small.jpg"></a>
 						<!-- för att lägga till nya bilder, gör en ny rad som dessa ovan, byt a href till den stora bilden, och img src till tumnageln-->
 				</div>
-			</div><br>
-			<div class="col-xs-2">
+				<p>Här kommer lite info om produkten</p>
+			</div>
+		</div>
+		<div class="row">	
+			<div class="col-xs-2 col-md-offset-6">
 			<p>Färg 1</p>
 				<select class="form-control">
-  					<option>1</option>
-  					<option>2</option>
-  					<option>3</option>
-  					<option>4</option>
-  					<option>5</option>
+  					<option>Svart</option>
+  					<option>Grön</option>
+  					<option>Orange</option>
+  					<option>Röd</option>
+  					<option>Blå</option>
 				</select>
-			</div><br>
-			<div class="col-xs-2">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-2 col-md-offset-6">
 			<p>Färg 2</p>
 				<select class="form-control">
-  					<option>1</option>
-  					<option>2</option>
-  					<option>3</option>
-  					<option>4</option>
-  					<option>5</option>
+  					<option>Svart</option>
+  					<option>Grön</option>
+  					<option>Orange</option>
+  					<option>Röd</option>
+  					<option>Blå</option>
 				</select>
-			</div><br>
-			<div class="col-xs-2">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-2 col-md-offset-6">
 			<p>Storlek cm</p>
 				<select class="form-control">
   					<option>15</option>
@@ -49,8 +56,10 @@
   					<option>22</option>
   					<option>23</option>
 				</select>
-			</div><br>
-			<div class="col-xs-2">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-2 col-md-offset-6">
 			<p>Spänne</p>
 				<select class="form-control">
   					<option>Knut</option>
