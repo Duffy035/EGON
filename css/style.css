@@ -60,7 +60,15 @@
 .thumbnail{
 	background-color: #86722D;
 	border-color:#FFCC00;
+	margin-top: 25px;
+	margin-left: 10px;
 }
+
+.btn-primary{
+	background-color:#FFCC00;
+	color: black;
+}
+
 .caption h3, p{
 	color: #E6E6E6;
 }
@@ -79,3 +87,4 @@
 .container{
 	margin: auto;
 }
+
