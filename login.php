@@ -1,10 +1,13 @@
+<?php include'inc/head.php';?>
+	<?php include'inc/template.php'; ?>
+	<?php include'inc/nav.php'; ?>
 
 <?php
-include('template.php');
+
 $content = <<<END
 <div class="container">
 <form action="login.php" method="post">
-<input type="text" name="username" placeholder="Användarnamn">
+<input type="text" name="email" placeholder="E-postadress">
 <input type="password" name="password" placeholder="Lösenord">
 <input type="submit" value="Logga in">
 </form>
@@ -12,22 +15,24 @@ $content = <<<END
 END;
 
 
-echo $navigation;
+//echo $navigation;
 echo $content;
 
-if (isset($_POST['username']))
+if (isset($_POST['email']))
 {
 	$query = <<<END
-	SELECT username, password id FROM user
-	WHERE username = "{$_POST['userid']}"
+	SELECT email, password, userid FROM user
+	WHERE email = "{$_POST['email']}"
 	AND password = "{$_POST['password']}"
 END;
 $res = $mysqli->query($query);
 	if($res->num_rows > 0)
 	{
 		$row = $res->fetch_object();
-		$_SESSION["username"] = $row->username;
-		$_SESSION["userId"] = $row->id;
+		//$_SESSION["email"] = $row->email;
+		$_SESSION["userid"] = $row->userid;
+		session_name("{$_POST['email']}");
+		session_start();
 		header("Location:index.php");
 	}
 	else
