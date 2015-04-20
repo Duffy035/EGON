@@ -64,9 +64,10 @@
 	margin-left: 10px;
 }
 
-.btn-primary{
-	background-color:#FFCC00;
-	color: black;
+.btn-default{
+	background-color:#373700;
+	color: yellow;
+	border-color: yellow;
 }
 
 .caption h3, p{
