@@ -6,7 +6,7 @@
 	float: right;
 	font-size: 60px;
 	margin-right: 300px;
-	margin-top: 70px;
+	margin-top: 40px;
 }
 #banner p{
 	color:#FFCC00;
@@ -21,13 +21,14 @@
 	background: linear-gradient(#151000, #555500);
 	margin-bottom: 0px;	
 	border-style: none;
+	margin-top: 0px;
 }
 .navbar-default .navbar-nav li a{
 	color:#E6E6E6;
 }
 
 #logga{
-	margin: -35px -5px -55px 0px;
+	margin: -40px -5px -85px 0px;
 }
 
 .subnav{
@@ -73,4 +74,8 @@
 	width: 50%;
 	margin-left:20%;
 	color:#FFCC00; 
+}
+
+.container{
+	margin: auto;
 }
