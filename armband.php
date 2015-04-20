@@ -15,7 +15,7 @@
 			     		<div class="caption">
 			        		<h3>Thumbnail label</h3>
 			        		<p>Halvstryp hej på deig mycket text tackarrrrr</p>
-			        		<p><a href="#" class="btn btn-default" role="button">Läs mer</a> <a href="#" class="btn btn-default" role="button">Köp</a></p>
+			        		<p><a href="#" class="btn btn-" role="button">Läs mer</a> <a href="#" class="btn btn-default" role="button">Köp</a></p>
 			      		</div>
 			 	</div>
 			</div>
