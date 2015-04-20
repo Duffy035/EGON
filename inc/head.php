@@ -14,7 +14,7 @@
 <body>
 <div class="container">
 	<div class="head">
-		<img id="logga" src="img/logga.png">
+		<img id="logga" src="img/loggaguul.png">
 			<div id="banner">
 				<p> Paracord Fashion</p>
 			</div>
