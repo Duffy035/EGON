@@ -16,7 +16,7 @@
 			        		<h3>Thumbnail label</h3>
 			        		<p>5.50 CORD ARMBAND SÄLJES</p>
 			        		<p><a href="#" class="btn btn-default" role="button">Läs mer</a> <a href="#" class="btn btn-default" role="button">Köp</a></p>
-			      		</div>
+			      	</div>
 			 	</div>
 			</div>
 		</div>
