@@ -1,5 +1,4 @@
 <?php
-				
 				$navigation = <<<END
 				<nav>
 					<a href="login.php">Test</a>
@@ -39,7 +38,7 @@ END;
 			<div id="login"> 
 				<?php
 					echo $navigation;
-					echo $row->userid;
+					
 				?>
 			</div>
 	</div>

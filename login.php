@@ -32,9 +32,10 @@ $res = $mysqli->query($query);
 		$row = $res->fetch_object();
 		$_SESSION["email"] = $row->email;
 		$_SESSION["userid"] = $row->userid;
-		session_name("{$_POST['email']}");
-		session_start();
-		header("Location:index.php");
+		//session_name("{$_POST['email']}");
+		//session_start();
+		//header("Location:index.php");
+		echo $row->userid;
 	}
 	else
 	{
