@@ -19,10 +19,7 @@ $res = $mysqli->query($query);
 while($row = $res->fetch_object()){
 
 		$price = $row->price;
-
-		
   }
-
 
 ?>
 
