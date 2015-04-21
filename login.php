@@ -6,12 +6,11 @@
 
 $login = <<<END
 <div class="container">
-<form action="login.php" method="post">
+<form action="login.php" method="post" name="login_form">
 <input type="text" name="email" placeholder="E-postadress">
 <input type="password" name="password" placeholder="Lösenord">
 <input type="submit" value="Logga in">
 </form>
-<hr>
 </div>
 END;
 
@@ -41,12 +40,15 @@ $res = $mysqli->query($query);
 		 echo '<div class="container"> Du angav fel användarnamn eller lösenord, vänligen prova igen.</div>';
 	}
 }
+
 $register = <<<END
+
 <div class="container">
-<form action="login.php" method="post">
+<hr>
+<form action="login.php" method="post" name="register_form">
 <input type="text" name="email2" placeholder="E-postadress"><br>
 <input type="text" name="fname" placeholder="Förnamn"><br>
-<input type="text" name="ename" placeholder="Efternamn"><br>
+<input type="text" name="lname" placeholder="Efternamn"><br>
 <input type="text" name="street" placeholder="Gatuadress"><br>
 <input type="number" name="zipcode" placeholder="Postnummer"><br>
 <input type="number" name="phone" placeholder="Telefonnummer"><br>
@@ -57,5 +59,15 @@ $register = <<<END
 END;
 
 echo $register;
+
+if(isset($_POST['email2']))	
+{
+	$query = <<<END
+	INSERT INTO user(fname,lname,street,zipcode,email,phone,password)
+	VALUES ('{$_POST['fname']}','{$_POST['lname']}','{$_POST['street']}','{$_POST['zipcode']}','{$_POST['email2']}','{$_POST['phone']}','{$_POST['password2']}')
+END;
+$mysqli->query($query);
+header('Location:index.php');
+} 
 
 ?>
