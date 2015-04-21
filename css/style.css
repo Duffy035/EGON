@@ -114,3 +114,8 @@
 #buy{
 	margin-left: 70%;
 }
+
+hr {
+	border-width: 2px;
+	border-color: grey;
+}
