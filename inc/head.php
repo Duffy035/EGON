@@ -19,7 +19,7 @@
 				<p> Paracord Fashion</p>
 			</div>
 			<div id="login">
-				<a href="#">Logga in/Registrera</a>
+				<a href="login.php">Logga in/Registrera</a>
 			</div>
 	</div>
 </div>
