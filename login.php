@@ -29,7 +29,7 @@ $res = $mysqli->query($query);
 	if($res->num_rows > 0)
 	{
 		$row = $res->fetch_object();
-		//$_SESSION["email"] = $row->email;
+		$_SESSION["email"] = $row->email;
 		$_SESSION["userid"] = $row->userid;
 		session_name("{$_POST['email']}");
 		session_start();
@@ -40,6 +40,15 @@ $res = $mysqli->query($query);
 		 echo '<div class="container"> Du angav fel användarnamn eller lösenord, vänligen prova igen.</div>';
 	}
 }
+$content = <<<END
+<div class="container">
+<form action="login.php" method="post">
+<input type="text" name="email" placeholder="E-postadress">
+<input type="password" name="password" placeholder="Lösenord">
+<input type="submit" value="Logga in">
+</form>
+</div>
+END;
 
 
 ?>
