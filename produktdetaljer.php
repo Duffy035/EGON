@@ -49,51 +49,59 @@ while($row = $res->fetch_object()){
 		<div class="row">	
 			<div class="col-xs-2 col-md-offset-6">
 			<p>Färg 1</p>
+			<input type="select" name="color1">
 				<select class="form-control">
-  					<option>Svart</option>
-  					<option>Grön</option>
-  					<option>Orange</option>
-  					<option>Röd</option>
-  					<option>Blå</option>
+  					<option value="black">Svart</option>
+  					<option value="green">Grön</option>
+  					<option value="orange">Orange</option>
+  					<option value="red">Röd</option>
+  					<option value="blue">Blå</option>
 				</select>
+			</input>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-2 col-md-offset-6">
 			<p>Färg 2</p>
+			<input type="select" name="color2">
 				<select class="form-control">
-  					<option>Svart</option>
-  					<option>Grön</option>
-  					<option>Orange</option>
-  					<option>Röd</option>
-  					<option>Blå</option>
+  					<option value="black">Svart</option>
+  					<option value="green">Grön</option>
+  					<option value="orange">Orange</option>
+  					<option value="red">Röd</option>
+  					<option value="blue">Blå</option>
 				</select>
+			</input>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-2 col-md-offset-6">
 			<p>Storlek cm</p>
+			<input type="select" name="stl">
 				<select class="form-control">
-  					<option>15</option>
-  					<option>16</option>
-  					<option>17</option>
-  					<option>18</option>
-  					<option>19</option>
-  					<option>20</option>
-  					<option>21</option>
-  					<option>22</option>
-  					<option>23</option>
+  					<option value="15">15</option>
+  					<option value="16">16</option>
+  					<option value="17">17</option>
+  					<option value="18">18</option>
+  					<option value="19">19</option>
+  					<option value="20">20</option>
+  					<option value="21">21</option>
+  					<option value="22">22</option>
+  					<option value="23">23</option>
 				</select>
+			</input>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-2 col-md-offset-6">
 			<p>Spänne</p>
+			<input type="select" name="mtrl">
 				<select class="form-control">
-  					<option>Knut</option>
-  					<option>Plast</option>
-  					<option>Metall</option>
+  					<option value="knut">Knut</option>
+  					<option value="plast">Plast</option>
+  					<option value="metall">Metall</option>
 				</select>
+			</input>
 			</div>
 		</div>
 		<div id="buy">
@@ -101,7 +109,7 @@ while($row = $res->fetch_object()){
 				<input type="hidden" name="cmd" value="_s-xclick">
 				<input type="hidden" name="hosted_button_id" value="ZH7KU6V93FLBE">
 
-				<input type="hidden" name="item_name" value="<?php{$row->name}?>">
+				<input type="hidden" name="item_name" value="<?php echo $name ?>">
 				<input type="hidden" name="item_number" value="{$row->"
 				<input type="hidden" name="amount" value=""
 
