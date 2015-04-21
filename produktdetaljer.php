@@ -1,3 +1,7 @@
+<script src="lightbox/js/jquery-1.11.0.min.js"></script>
+<script src="lightbox/js/lightbox.min.js"></script>
+<link href="lightbox/css/lightbox.css" rel="stylesheet" />
+
 <?php include'inc/head.php';?>
 <?php include'inc/template.php'; ?> 
 <?php include 'inc/nav.php'; ?>
@@ -13,7 +17,7 @@ if(isset($_GET['id'])){
 }
 
 $query = "SELECT productid, name, imagelink, thumbnail_link, description, price
-FROM product_details";
+		  FROM product_details";
 
 $res = $mysqli->query($query);
 while($row = $res->fetch_object()){
@@ -37,8 +41,8 @@ while($row = $res->fetch_object()){
 			
 			<div class="col-xs-4"> 
 				<div class="images">
-					<a href="img/img1.png" data-lightbox="Bilder" data-title="Falken dominerar."><img src="img/img1small.jpg"></a>
-					<a href="img/img2.jpg" data-lightbox="Bilder" data-title="Pelle Jönsson"><img src="img/img2small.jpg"></a>
+					<a href="img/Cobra.png" data-lightbox="img" data-title="Cobra armband"><img class="thumbimages" src="img/Cobra.png"></a>
+					<a href="img/Cobra6.png" data-lightbox="img" data-title="Cobraaa"><img class="thumbimages"src="img/Cobra6.png"></a>
 					<a href="img/img3.jpg" data-lightbox="Bilder" data-title="Vetenskapen påvisar: Ungdomar är sjukt biffiga nu för tiden"><img src="img/img3small.jpg"></a>
 					<a href="img/img4.png" data-lightbox="Bilder" data-title="Ny SM-mästare: Malin Skoghag"><img src="img/img4small.jpg"></a>
 						<!-- för att lägga till nya bilder, gör en ny rad som dessa ovan, byt a href till den stora bilden, och img src till tumnageln-->
@@ -49,36 +53,31 @@ while($row = $res->fetch_object()){
 		<div class="row">	
 			<div class="col-xs-2 col-md-offset-6">
 			<p>Färg 1</p>
-			<input type="select" name="color1">
-				<select class="form-control">
+				<select class="form-control" name="color1">
   					<option value="black">Svart</option>
   					<option value="green">Grön</option>
   					<option value="orange">Orange</option>
   					<option value="red">Röd</option>
   					<option value="blue">Blå</option>
 				</select>
-			</input>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-2 col-md-offset-6">
 			<p>Färg 2</p>
-			<input type="select" name="color2">
-				<select class="form-control">
+				<select class="form-control" name="color2">
   					<option value="black">Svart</option>
   					<option value="green">Grön</option>
   					<option value="orange">Orange</option>
   					<option value="red">Röd</option>
   					<option value="blue">Blå</option>
 				</select>
-			</input>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-2 col-md-offset-6">
 			<p>Storlek cm</p>
-			<input type="select" name="stl">
-				<select class="form-control">
+				<select class="form-control" name="stl">
   					<option value="15">15</option>
   					<option value="16">16</option>
   					<option value="17">17</option>
@@ -89,19 +88,16 @@ while($row = $res->fetch_object()){
   					<option value="22">22</option>
   					<option value="23">23</option>
 				</select>
-			</input>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-2 col-md-offset-6">
 			<p>Spänne</p>
-			<input type="select" name="mtrl">
-				<select class="form-control">
+				<select class="form-control" name="mtrl">
   					<option value="knut">Knut</option>
   					<option value="plast">Plast</option>
   					<option value="metall">Metall</option>
 				</select>
-			</input>
 			</div>
 		</div>
 		<div id="buy">
@@ -110,8 +106,8 @@ while($row = $res->fetch_object()){
 				<input type="hidden" name="hosted_button_id" value="ZH7KU6V93FLBE">
 
 				<input type="hidden" name="item_name" value="<?php echo $name ?>">
-				<input type="hidden" name="item_number" value="{$row->"
-				<input type="hidden" name="amount" value=""
+				<input type="hidden" name="item_number" value="<?php echo $productid ?>">
+				<input type="hidden" name="amount" value="<?php echo $price ?>">
 
 				<input type="hidden" name="currency_code" value="SEK">
 				<input type="image" src="https://www.paypalobjects.com/sv_SE/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – ett tryggt och smidigt sätt att betala på nätet med.">
@@ -123,3 +119,9 @@ while($row = $res->fetch_object()){
 
 </body>
 </html>
+
+
+<!--*Javascript:
+$('select[name=mtrl]').form-control();-->
+
+<!-- javascripten Jonne-->
