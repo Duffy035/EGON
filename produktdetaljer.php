@@ -19,6 +19,11 @@ $res = $mysqli->query($query);
 while($row = $res->fetch_object()){
 
 		$price = $row->price;
+		$name = $row->name;
+		$productid = $row->productid;
+		$imagelink = $row->imagelink;
+		$thumbnail_link = $row->thumbnail_link;
+		$description = $row->description;
   }
 
 ?>
@@ -27,7 +32,7 @@ while($row = $res->fetch_object()){
 <div class="container">
 	<div class="content">
 		<div class="row" id="produktinfo">
-  			<div class="col-xs-4">Produktnamn</div>
+  			<div class="col-xs-4"><?php echo $name ?></div>
   			<div class="col-xs-6"><?php echo $price ?></div>
 			
 			<div class="col-xs-4"> 
@@ -95,6 +100,10 @@ while($row = $res->fetch_object()){
 			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 				<input type="hidden" name="cmd" value="_s-xclick">
 				<input type="hidden" name="hosted_button_id" value="ZH7KU6V93FLBE">
+
+				<input type="hidden" name="item_name" value="<?php{$row->name}?>">
+				<input type="hidden" name="item_number" value="{$row->"
+				<input type="hidden" name="amount" value=""
 
 				<input type="hidden" name="currency_code" value="SEK">
 				<input type="image" src="https://www.paypalobjects.com/sv_SE/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – ett tryggt och smidigt sätt att betala på nätet med.">
