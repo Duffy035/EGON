@@ -1,11 +1,37 @@
 <?php include'inc/head.php';?>
-<?php include'inc/template.php'; ?>
-<?php include'inc/nav.php'; ?> 
+<?php include'inc/template.php'; ?> 
+<?php include 'inc/nav.php'; ?>
+
+
+<?php
+
+$content ="";
+if(isset($_GET['id'])){
+
+	$productid = $_GET['id'];
+
+}
+
+$query = "SELECT productid, name, imagelink, thumbnail_link, description, price
+FROM product_details";
+
+$res = $mysqli->query($query);
+while($row = $res->fetch_object()){
+
+		$price = $row->price;
+
+		
+  }
+
+
+?>
+
+
 <div class="container">
 	<div class="content">
 		<div class="row" id="produktinfo">
   			<div class="col-xs-4">Produktnamn</div>
-  			<div class="col-xs-6">Pis:-</div>
+  			<div class="col-xs-6"><?php echo $price ?></div>
 			
 			<div class="col-xs-4"> 
 				<div class="images">
