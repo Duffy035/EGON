@@ -1,3 +1,21 @@
+<?php
+				
+				$navigation = <<<END
+				<nav>
+					<a href="login.php">Test</a>
+				</nav>
+END;
+			if(isset($_SESSION['userid'])) {
+				$navigation .= <<<END
+				<a href="#">Logout</a>
+				Inloggad som {$_SESSION['userid']}
+END;
+			}else{
+				$navigation .= '<a href="login.php">Logga in</a>';
+			}
+			$navigation .= '</nav>';
+			
+			?>
 <!doctype html>
 <html>
 <head>
@@ -18,8 +36,11 @@
 			<div id="banner">
 				<p> Paracord Fashion</p>
 			</div>
-			<div id="login">
-				<a href="login.php">Logga in/Registrera</a>
+			<div id="login"> 
+				<?php
+					echo $navigation;
+					echo $row->userid;
+				?>
 			</div>
 	</div>
 </div>
