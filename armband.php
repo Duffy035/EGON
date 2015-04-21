@@ -11,7 +11,7 @@
 		<div class="row">
 			<div class="col-xs-6 col-md-3">
 		    	<div class="thumbnail">
-		      		<img src="img/bild.jpg" alt="...">
+		      		<img src="img/armband.png" alt="...">
 			     		<div class="caption">
 			        		<h3>Thumbnail label</h3>
 			        		<p>Halvstryp hej på deig mycket text tackarrrrr</p>
