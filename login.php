@@ -22,7 +22,7 @@ echo $login;
 if (isset($_POST['email']))
 {
 	$query = <<<END
-	SELECT email, password, userid FROM user
+	SELECT email, password, userid, fname, lname FROM user
 	WHERE email = "{$_POST['email']}"
 	AND password = "{$_POST['password']}"
 END;
@@ -30,11 +30,13 @@ $res = $mysqli->query($query);
 	if($res->num_rows > 0)
 	{
 		$row = $res->fetch_object();
-		$_SESSION["email"] = $row->email;
+		$_SESSION["fname"] = $row->fname;
 		$_SESSION["userid"] = $row->userid;
-		session_name("{$_POST['email']}");
-		session_start();
-		header("Location:index.php");
+		//header("Location:index.php");
+		/*$test = <<<END
+		Inloggad som {$_SESSION['fname']}
+END;*/
+
 	}
 	else
 	{
@@ -46,7 +48,7 @@ $register = <<<END
 <form action="login.php" method="post">
 <input type="text" name="email2" placeholder="E-postadress"><br>
 <input type="text" name="fname" placeholder="Förnamn"><br>
-<input type="text" name="ename" placeholder="Efternamn"><br>
+<input type="text" name="lname" placeholder="Efternamn"><br>
 <input type="text" name="street" placeholder="Gatuadress"><br>
 <input type="number" name="zipcode" placeholder="Postnummer"><br>
 <input type="number" name="phone" placeholder="Telefonnummer"><br>
@@ -56,6 +58,18 @@ $register = <<<END
 </div>
 END;
 
+if(isset($_POST['email2']))	
+{
+	$query = <<<END
+	INSERT INTO user(fname,lname,street,zipcode,email,phone,password)
+	VALUES ('{$_POST['fname']}','{$_POST['lname']}','{$_POST['street']}','{$_POST['zipcode']}','{$_POST['email2']}','{$_POST['phone']}','{$_POST['password2']}')
+END;
+$mysqli->query($query);
+header('Location:index.php');
+} 
+
+
 echo $register;
+//echo $test;
 
 ?>

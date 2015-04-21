@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -20,6 +21,9 @@
 			</div>
 			<div id="login">
 				<a href="login.php">Logga in/Registrera</a>
+				<?php
+				
+				?>
 			</div>
 	</div>
 </div>
