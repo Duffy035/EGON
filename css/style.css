@@ -59,7 +59,6 @@
 
 .content{
 	background-color:#373700;
-	height:auto;
 	width:auto;
 }
 
@@ -109,7 +108,9 @@
 	width:70%;
 	margin:auto;
 }
-
+.tajt p{
+	text-align: center;
+}
 #buy{
 	margin-left: 70%;
 }
