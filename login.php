@@ -4,19 +4,20 @@
 
 <?php
 
-$content = <<<END
+$login = <<<END
 <div class="container">
 <form action="login.php" method="post">
 <input type="text" name="email" placeholder="E-postadress">
 <input type="password" name="password" placeholder="Lösenord">
 <input type="submit" value="Logga in">
 </form>
+<hr>
 </div>
 END;
 
 
 //echo $navigation;
-echo $content;
+echo $login;
 
 if (isset($_POST['email']))
 {
@@ -40,15 +41,21 @@ $res = $mysqli->query($query);
 		 echo '<div class="container"> Du angav fel användarnamn eller lösenord, vänligen prova igen.</div>';
 	}
 }
-$content = <<<END
+$register = <<<END
 <div class="container">
 <form action="login.php" method="post">
-<input type="text" name="email" placeholder="E-postadress">
-<input type="password" name="password" placeholder="Lösenord">
-<input type="submit" value="Logga in">
+<input type="text" name="email2" placeholder="E-postadress"><br>
+<input type="text" name="fname" placeholder="Förnamn"><br>
+<input type="text" name="ename" placeholder="Efternamn"><br>
+<input type="text" name="street" placeholder="Gatuadress"><br>
+<input type="number" name="zipcode" placeholder="Postnummer"><br>
+<input type="number" name="phone" placeholder="Telefonnummer"><br>
+<input type="password" name="password2" placeholder="Lösenord"><br>
+<input type="submit" value="Registera dig">
 </form>
 </div>
 END;
 
+echo $register;
 
 ?>
