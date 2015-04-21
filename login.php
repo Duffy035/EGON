@@ -14,8 +14,6 @@ $login = <<<END
 </div>
 END;
 
-
-//echo $navigation;
 echo $login;
 
 if (isset($_POST['email']))
@@ -31,9 +29,8 @@ $res = $mysqli->query($query);
 		$row = $res->fetch_object();
 		$_SESSION["email"] = $row->email;
 		$_SESSION["userid"] = $row->userid;
-		session_name("{$_POST['email']}");
-		session_start();
-		header("Location:index.php");
+		//header("Location:index.php");
+		echo $row->userid;
 	}
 	else
 	{
