@@ -4,7 +4,7 @@ include('template.php');
 if(isset($_POST['fname']))
 {
 	$query = <<<END
-	INSERT INTO products(userid,fname,lname, street, zipcode, email, phone, password)
+	INSERT INTO products(userid, fname, lname, street, zipcode, email, phone, password)
 
 	VALUES('{$_POST['userid']}','{$_POST['fname']}','{$_POST['lname']}','{$_POST['street']}','{$_POST['zipcode']}','{$_POST['email']}','{$_POST['phone'],
 		'{$_POST['password']}')
