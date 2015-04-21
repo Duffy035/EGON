@@ -7,6 +7,7 @@
 	font-size: 60px;
 	margin-right: 300px;
 	margin-top: 40px;
+	text-shadow: 18px 18px 18px #000000;
 }
 #banner p{
 	color:#FFCC00;
@@ -21,10 +22,13 @@
 	background: linear-gradient(#151000, #555500);
 	margin-bottom: 0px;	
 	border-style: none;
-	margin-top: 0px;
+	margin-top: 0px;	
 }
+
+
 .navbar-default .navbar-nav li a{
 	color:#E6E6E6;
+	text-shadow: 5px 5px 5px #000000;
 }
 
 #logga{
@@ -35,6 +39,10 @@
 	padding-top:30px;
 	width: 80%;
 	margin:auto;
+	font-family: Verdana;
+}
+
+.textintro{
 	font-family: Verdana;
 }
 
