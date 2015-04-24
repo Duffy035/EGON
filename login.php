@@ -1,23 +1,7 @@
 <?php include'inc/head.php';?>
-	<?php include'inc/template.php'; ?>
-	<?php include'inc/nav.php'; ?>
+<?php include'inc/nav.php'; ?>
 
 <?php
-
-$login = <<<END
-<div class="container">
-<form action="login.php" method="post">
-<input type="text" name="email" placeholder="E-postadress">
-<input type="password" name="password" placeholder="Lösenord">
-<input type="submit" value="Logga in">
-</form>
-<hr>
-</div>
-END;
-
-
-//echo $navigation;
-echo $login;
 
 if (isset($_POST['email']))
 {
@@ -33,9 +17,9 @@ $res = $mysqli->query($query);
 		$_SESSION["fname"] = $row->fname;
 		$_SESSION["userid"] = $row->userid;
 		//header("Location:index.php");
-		/*$test = <<<END
+		$test = <<<END
 		Inloggad som {$_SESSION['fname']}
-END;*/
+END;
 
 	}
 	else
@@ -43,6 +27,26 @@ END;*/
 		 echo '<div class="container"> Du angav fel användarnamn eller lösenord, vänligen prova igen.</div>';
 	}
 }
+
+$login = <<<END
+<div class="container">
+<form action="login.php" method="post">
+<input type="text" name="email" placeholder="E-postadress">
+<input type="password" name="password" placeholder="Lösenord">
+<input type="submit" value="Logga in">
+</form>
+<hr>
+</div>
+END;
+
+echo $login;
+
+echo $_SESSION['fname'];
+
+
+
+
+
 $register = <<<END
 <div class="container">
 <form action="login.php" method="post">

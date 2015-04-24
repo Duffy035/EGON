@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html>
 <head>
@@ -20,10 +21,19 @@
 				<p> Paracord Fashion</p>
 			</div>
 			<div id="login">
-				<a href="login.php">Logga in/Registrera</a>
 				<?php
-				
-				?>
+          if (isset($_SESSION['userid'])) {
+            echo "
+            <a href='produktdetaljer.php'>Logout</a>
+            Inloggad som {$_SESSION['fname']}";
+
+            echo $loginknapp;
+}
+else
+{
+  echo ' <a href="login.php">Logga in</a>';
+}
+        ?>
 			</div>
 	</div>
 </div>
