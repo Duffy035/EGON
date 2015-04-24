@@ -1,6 +1,9 @@
 <script src="lightbox/js/jquery-1.11.0.min.js"></script>
 <script src="lightbox/js/lightbox.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script language="javascript" type="js/javascript.js"></script>
 <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+
 
 <?php include'inc/head.php';?>
 <?php include'inc/template.php'; ?> 
@@ -108,6 +111,8 @@ while($row = $res->fetch_object()){
 				<input type="hidden" name="item_name" value="<?php echo $name ?>">
 				<input type="hidden" name="item_number" value="<?php echo $productid ?>">
 				<input type="hidden" name="amount" value="<?php echo $price ?>">
+				<input type="hidden" name="item_stl" value=
+
 
 				<input type="hidden" name="currency_code" value="SEK">
 				<input type="image" src="https://www.paypalobjects.com/sv_SE/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – ett tryggt och smidigt sätt att betala på nätet med.">
