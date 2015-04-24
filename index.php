@@ -11,16 +11,16 @@
 				<div class="tajt">
 					<div class="row">
 						<div class="col-xs-4">
-					    	<img src="img/yellow.jpeg" alt="Gul" class="guideimg">
-					    	<p>Gul färg</p>
+					    	<img src="img/kitty.png" alt="Gul" class="guideimg">
+					    	<p>Hello Kitty!</p>
 					    </div>
 					    <div class="col-xs-4">
-					    	<img src="img/grey.jpeg" alt="Grå" class="guideimg">
-					    	<p>Grå färg</p>
+					    	<img src="img/blagul.png" alt="Grå" class="guideimg">
+					    	<p>Blå/beige</p>
 					    </div>
 					    <div class="col-xs-4">
-					    	<img src="img/red.jpeg" alt="Red" class="guideimg">
-					    	<p>Röd färg</p>
+					    	<img src="img/blaa.png" alt="Red" class="guideimg">
+					    	<p>Blå</p>
 			    </div>	
 			</div>
 			
