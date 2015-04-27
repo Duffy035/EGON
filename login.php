@@ -1,7 +1,8 @@
-<?php include'inc/head.php';?>
-<?php include'inc/nav.php'; ?>
+<?php include'inc/head.php';
+include'inc/nav.php';
+include'inc/template.php';
 
-<?php
+
 
 if (isset($_POST['email']))
 {
@@ -16,11 +17,8 @@ $res = $mysqli->query($query);
 		$row = $res->fetch_object();
 		$_SESSION["fname"] = $row->fname;
 		$_SESSION["userid"] = $row->userid;
-		//header("Location:index.php");
-		$test = <<<END
-		Inloggad som {$_SESSION['fname']}
-END;
-
+		header("Location:minasidor.php");
+		
 	}
 	else
 	{
@@ -40,8 +38,6 @@ $login = <<<END
 END;
 
 echo $login;
-
-echo $_SESSION['fname'];
 
 
 

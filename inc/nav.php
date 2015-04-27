@@ -61,6 +61,18 @@
     		<li><a href="ovrigt.php">Övrigt</a></li>
     		<li><a href="guide.php">Färg & stoleks guide</a></li>
     		<li><a href="kontakt.php">Kontakt</a></li>
+        <?php
+          if (isset($_SESSION['userid'])) {
+            echo "
+            <li><a href='#'>Mina sidor</a></li>
+            <li><a href='#'>Logout</a>
+            Inloggad som {$_SESSION['fname']}";
+}
+else
+{
+  echo ' <li><a href="login.php">Logga in</a></li>';
+}
+        ?>
       </ul>      
     </div>
     </div><!-- /.navbar-collapse -->

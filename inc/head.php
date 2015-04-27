@@ -26,8 +26,6 @@
             echo "
             <a href='produktdetaljer.php'>Logout</a>
             Inloggad som {$_SESSION['fname']}";
-
-            echo $loginknapp;
 }
 else
 {
