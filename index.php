@@ -5,7 +5,7 @@
 		<div class="content"> 
 			<div id="welcome">
 				<p> Välkommen till Paracord Fashion!</p><br></div><br></br>
-				<div id="textintro"><p>Vi är ett veteranägt företagt som tillverkar varje arband för hand. Varje armband är unikt, därav kan leveranstiden variera.<br> Alla som arbetar inom Paracord Fashion har anknytning till Försvarsmakten och Utlandsstyrkan.
+				<div id="textintro"><p>Vi är ett veteranägt företagt som tillverkar varje armband för hand. Varje armband är unikt, därav kan leveranstiden variera.<br> Alla som arbetar inom Paracord Fashion har anknytning till Försvarsmakten och Utlandsstyrkan.
 				 </p>
 			</div>
 				<div class="tajt">

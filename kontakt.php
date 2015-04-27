@@ -12,7 +12,7 @@
 				<br>
 				<br>
 				<textarea name="msg" placeholder="Meddelande"></textarea>
-				<br>
+				<br><br>
 				<input class="btn btn-default" type="submit" value="Skicka">
 			</form>
 		</div>
