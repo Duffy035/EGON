@@ -8,13 +8,12 @@ $content ="";
 if(isset($_GET['id'])){
 
 	$productid = $_GET['id'];
-
 }
 
 $query = "SELECT * FROM product_details";
 
-$res = $mysqli->query($query);
-if($res->num_rows > 0)
+	$res = $mysqli->query($query);
+	if($res->num_rows > 0)
 {
 	while($row = $res->fetch_object()){
 
@@ -35,11 +34,9 @@ if($res->num_rows > 0)
 			      			</div>
 			 		</div>
 				</div>
-
 END;
 	  }
 }
-
 
 ?>
 
@@ -49,16 +46,15 @@ END;
 					<a href="50cord.php">5.50 Cord</a><br>
 					<a href="typecord.php">Type 1 Cord</a><br>
 				</div>
-
-				<div class="row"> <!--eeeeh?-->
-			
+				
+			<div class="row"> <!--eeeeh?-->			
 <?php 
 
 	echo $content;
-
 ?>
 			</div>
 		</div>
-		</div>
+	</div>
 </body>
+
 </html>
