@@ -17,5 +17,5 @@
 			$('#buy').click(function(){
 				var mtrl = $('#mtrl').val();
 				$("#material").val(mtrl);
-			});
+			});	
 		});

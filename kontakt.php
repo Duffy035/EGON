@@ -1,6 +1,8 @@
 <?php include'inc/head.php';?>
 <?php include'inc/template.php'; ?>
 <?php include'inc/nav.php'; ?> 
+<script src="js/javascript.js"></script>
+
 <div class="container">
 	<div class="content">	
 		<div class="mail">
@@ -17,24 +19,11 @@
 
 <?php
 
-if(isset($_POST))
-{
-	$content = <<<END
-	<div class="container">
-	<h3>Meddelandet är  skickat</h3>
-	Namn: {$_POST["name"]}
-	<br>
-	Meddelande: {$_POST["msg"]}
-	</div>
-END;
-
 $to = "jonnwi12@student.hh.se";
 $subject = "Test-mail";
 $msg = $_POST["msg"];
 $headers = "From: " . $_POST["name"];
 mail($to, $subject, $msg, $headers);
-}
-echo $content;
 
 ?>
 
