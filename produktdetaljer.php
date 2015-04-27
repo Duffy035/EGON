@@ -12,35 +12,24 @@
 
 <?php
 
-$content ="";
-if(isset($_GET['id'])){
+$content = "";
+if(isset($_GET['productid']))
 
-	$productid = $_GET['id'];
-
-}
-
-$query = "SELECT productid, name, imagelink, thumbnail_link, description, price
-		  FROM product_details";
+	$query = <<<END
+	SELECT * FROM product_details
+	WHERE productid = '{$_GET['productid']}'
+END;
 
 $res = $mysqli->query($query);
-while($row = $res->fetch_object()){
+if($res ->num_rows > 0)
+{
+	$row = $res -> fetch_object();
 
-		$price = $row->price;
-		$name = $row->name;
-		$productid = $row->productid;
-		$imagelink = $row->imagelink;
-		$thumbnail_link = $row->thumbnail_link;
-		$description = $row->description;
-  }
+	$content = <<<END
 
-?>
-
-
-<div class="container">
-	<div class="content">
 		<div class="row" id="produktinfo">
-  			<div class="col-xs-4"><?php echo $name ?></div>
-  			<div class="col-xs-6"><?php echo $price ?></div>
+  			<div class="col-xs-4">{$row->name}</div>
+  			<div class="col-xs-6">{$row->price}</div>
 			
 			<div class="col-xs-4"> 
 				<div class="images">
@@ -50,9 +39,21 @@ while($row = $res->fetch_object()){
 					<a href="img/img4.png" data-lightbox="Bilder" data-title="Ny SM-mästare: Malin Skoghag"><img src="img/img4small.jpg"></a>
 						<!-- för att lägga till nya bilder, gör en ny rad som dessa ovan, byt a href till den stora bilden, och img src till tumnageln-->
 				</div>
-				<p>Här kommer lite info om produkten</p>
+				<p>{$row->description}</p>
 			</div>
 		</div>
+END;
+  }
+
+?>
+
+
+<div class="container">
+	<div class="content">
+	<?php
+
+	echo $content;
+	?>
 		<div class="row">	
 			<div class="col-xs-2 col-md-offset-6">
 			<p>Färg 1</p>
