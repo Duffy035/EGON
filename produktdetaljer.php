@@ -1,7 +1,7 @@
 <script src="lightbox/js/jquery-1.11.0.min.js"></script>
 <script src="lightbox/js/lightbox.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<script language="javascript" type="js/javascript.js"></script>
+<script src="js/javascript.js"></script>
 <link href="lightbox/css/lightbox.css" rel="stylesheet" />
 
 
@@ -56,7 +56,7 @@ while($row = $res->fetch_object()){
 		<div class="row">	
 			<div class="col-xs-2 col-md-offset-6">
 			<p>Färg 1</p>
-				<select class="form-control" name="color1">
+				<select class="form-control" id="color1" name="color1">
   					<option value="black">Svart</option>
   					<option value="green">Grön</option>
   					<option value="orange">Orange</option>
@@ -68,7 +68,7 @@ while($row = $res->fetch_object()){
 		<div class="row">
 			<div class="col-xs-2 col-md-offset-6">
 			<p>Färg 2</p>
-				<select class="form-control" name="color2">
+				<select class="form-control" id="color2" name="color2">
   					<option value="black">Svart</option>
   					<option value="green">Grön</option>
   					<option value="orange">Orange</option>
@@ -80,7 +80,7 @@ while($row = $res->fetch_object()){
 		<div class="row">
 			<div class="col-xs-2 col-md-offset-6">
 			<p>Storlek cm</p>
-				<select class="form-control" name="stl">
+				<select class="form-control" id="stl" name="stl">
   					<option value="15">15</option>
   					<option value="16">16</option>
   					<option value="17">17</option>
@@ -96,7 +96,7 @@ while($row = $res->fetch_object()){
 		<div class="row">
 			<div class="col-xs-2 col-md-offset-6">
 			<p>Spänne</p>
-				<select class="form-control" name="mtrl">
+				<select class="form-control" id="mtrl" name="mtrl">
   					<option value="knut">Knut</option>
   					<option value="plast">Plast</option>
   					<option value="metall">Metall</option>
@@ -111,8 +111,10 @@ while($row = $res->fetch_object()){
 				<input type="hidden" name="item_name" value="<?php echo $name ?>">
 				<input type="hidden" name="item_number" value="<?php echo $productid ?>">
 				<input type="hidden" name="amount" value="<?php echo $price ?>">
-				<input type="hidden" name="item_stl" value=
-
+				<input type="hidden" id="colour1" name="item_color1" value="">
+				<input type="hidden" id="colour2" name="item_color2" value="">
+				<input type="hidden" id="size" name="item_stl" value="">
+				<input type="hidden" id="material" name="item_mtrl" value="">
 
 				<input type="hidden" name="currency_code" value="SEK">
 				<input type="image" src="https://www.paypalobjects.com/sv_SE/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – ett tryggt och smidigt sätt att betala på nätet med.">
