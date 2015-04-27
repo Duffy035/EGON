@@ -1,8 +1,21 @@
-<?php include'inc/head.php';
-include'inc/nav.php';
-include'inc/template.php';
+<?php 
+	
+	include'inc/head.php';
+	include'inc/nav.php';
+	include'inc/template.php';
 
+$login = <<<END
+<div class="container">
+<form action="login.php" method="post">
+<input type="text" name="email" placeholder="E-postadress">
+<input type="password" name="password" placeholder="Lösenord">
+<input type="submit" value="Logga in">
+</form>
+<hr>
+</div>
+END;
 
+echo $login;
 
 if (isset($_POST['email']))
 {
@@ -25,22 +38,6 @@ $res = $mysqli->query($query);
 		 echo '<div class="container"> Du angav fel användarnamn eller lösenord, vänligen prova igen.</div>';
 	}
 }
-
-$login = <<<END
-<div class="container">
-<form action="login.php" method="post">
-<input type="text" name="email" placeholder="E-postadress">
-<input type="password" name="password" placeholder="Lösenord">
-<input type="submit" value="Logga in">
-</form>
-<hr>
-</div>
-END;
-
-echo $login;
-
-
-
 
 
 $register = <<<END
@@ -70,6 +67,5 @@ header('Location:index.php');
 
 
 echo $register;
-//echo $test;
 
 ?>

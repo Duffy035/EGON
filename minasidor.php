@@ -30,13 +30,13 @@ END;
 			$row = $res->fetch_object();
 			$content .= <<<END
 			<form method="post" action="edit_user.php?userid={$row->userid}">
-			<input type="text" name="fname" value="{$row->fname}">
-			<input type="text" name="lname" value="{$row->lname}">
-			<input type="text" name="street" value="{$row->street}">
-			<input type="text" name="zipcode" value="{$row->zipcode}">
-			<input type="text" name="email" value="{$row->email}">
-			<input type="text" name="phone" value="{$row->phone}">
-			<input type="password" name="password" value="{$row->password}">
+			<input type="text" name="fname" value="{$row->fname}"><br>
+			<input type="text" name="lname" value="{$row->lname}"><br>
+			<input type="text" name="street" value="{$row->street}"><br>
+			<input type="text" name="zipcode" value="{$row->zipcode}"><br>
+			<input type="text" name="email" value="{$row->email}"><br>
+			<input type="text" name="phone" value="{$row->phone}"><br>
+			<input type="password" name="password" value="{$row->password}"><br>
 			<input type="submit" value="Spara">
 			</form>
 END;
@@ -44,4 +44,5 @@ END;
 	}
 
 	echo $content;
+	echo $_SESSION['userid'];
 ?>
