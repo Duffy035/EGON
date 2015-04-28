@@ -15,7 +15,13 @@ $content = "";
 if(isset($_GET['productid']))
 
 	$query = <<<END
-	SELECT name, price, productid, description, thumbnail_link FROM product_details, thumb_img
+	SELECT * FROM product_details
+	WHERE productid = '{$_GET['productid']}'
+
+END;
+
+$query = <<<END
+	SELECT * FROM product_details
 	WHERE productid = '{$_GET['productid']}'
 
 END;
