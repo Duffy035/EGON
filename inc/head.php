@@ -16,9 +16,9 @@
 <body>
 <div class="container">
 	<div class="head">
-		<img id="logga" src="img/loggaguul.png">
+		<img class="img-responsive" id="logga" src="img/loggaguul.png">
 			<div id="banner">
-				<p> Paracord Fashion</p>
+				<img class="img-responsive"><p> Paracord Fashion</p>
 			</div>
 			<div id="login">
 				<?php

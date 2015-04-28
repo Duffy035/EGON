@@ -1,5 +1,4 @@
 	<?php include'inc/head.php';?>
-	<?php include'inc/template.php'; ?>
 	<?php include'inc/nav.php'; ?>
 	<div class="container">
 		<div class="content"> 
@@ -11,15 +10,15 @@
 				<div class="tajt">
 					<div class="row">
 						<div class="col-xs-4">
-					    	<img src="img/kitty.png" alt="Gul" class="guideimg">
+					    	<img class="img-responsive" img src="img/kitty.png" alt="Gul" class="guideimg">
 					    	<p>Hello Kitty!</p>
 					    </div>
 					    <div class="col-xs-4">
-					    	<img src="img/blagul.png" alt="Grå" class="guideimg">
+					    	<img class="img-responsive" img src="img/blagul.png" alt="Grå" class="guideimg">
 					    	<p>Blå/beige</p>
 					    </div>
 					    <div class="col-xs-4">
-					    	<img src="img/blaa.png" alt="Red" class="guideimg">
+					    	<img class="img-responsive" img src="img/blaa.png" alt="Red" class="guideimg">
 					    	<p>Blå</p><br></br><br></br>
 			    </div>	
 			</div>
