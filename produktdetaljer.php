@@ -118,7 +118,7 @@ END;
 				<input type="hidden" name="lc" value="SE">
 				<input type="hidden" name="item_name" value="{$row->name}">
 				<input type="hidden" name="item_number" value="{$row->productid}">
-				<input type="hidden" name="amount_x" value="{$row->price}">
+				<input type="hidden" name="amount_1" value="{$row->price}">
 				<input type="hidden" name="currency_code" value="SEK">
 				<input type="hidden" name="button_subtype" value="services">
 				<input type="hidden" name="no_note" value="0">
