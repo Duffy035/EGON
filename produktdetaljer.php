@@ -7,6 +7,7 @@
 <?php include'inc/head.php';?>
 <?php include'inc/template.php'; ?> 
 <?php include 'inc/nav.php'; ?>
+<?php include 'config.php'; ?>
 
 <?php
 
@@ -102,23 +103,38 @@ END;
 				</select>
 			</div>
 		</div>
+
+	<?php
+
+	$paypal_btn ="";
+
+
+		$paypal_btn .= <<<END
+	
 		<div id="buy">
-			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-				<input type="hidden" name="cmd" value="_s-xclick">
-				<input type="hidden" name="hosted_button_id" value="ZH7KU6V93FLBE">
-
-				<input type="hidden" name="item_name" value="<?php echo $name ?>">
-				<input type="hidden" name="item_number" value="<?php echo $productid ?>">
-				<input type="hidden" name="amount" value="<?php echo $price ?>">
-				<input type="hidden" id="colour1" name="item_color1" value="">
-				<input type="hidden" id="colour2" name="item_color2" value="">
-				<input type="hidden" id="size" name="item_stl" value="">
-				<input type="hidden" id="material" name="item_mtrl" value="">
-
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_xclick">
+				<input type="hidden" name="business" value="D4ZNRTM8G8FRQ">
+				<input type="hidden" name="lc" value="SE">
+				<input type="hidden" name="item_name" value="{$row->name}">
+				<input type="hidden" name="item_number" value="{$row->productid}">
+				<input type="hidden" name="amount_x" value="{$row->price}">
 				<input type="hidden" name="currency_code" value="SEK">
-				<input type="image" src="https://www.paypalobjects.com/sv_SE/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – ett tryggt och smidigt sätt att betala på nätet med.">
+				<input type="hidden" name="button_subtype" value="services">
+				<input type="hidden" name="no_note" value="0">
+				<input type="hidden" name="cn" value="Lägg till specialinstruktioner till säljaren:">
+				<input type="hidden" name="no_shipping" value="2">
+				<input type="hidden" name="undefined_quantity" value="1">
+				<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHosted">
+				<input type="image" src="https://www.paypalobjects.com/sv_SE/SE/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – ett tryggt och smidigt sätt att betala på nätet med.">
 				<img alt="" border="0" src="https://www.paypalobjects.com/sv_SE/i/scr/pixel.gif" width="1" height="1">
 			</form>
+
+END;
+
+	echo $paypal_btn;
+	?>
+
 		</div>
 	</div>
 </div>
@@ -127,7 +143,22 @@ END;
 </html>
 
 
-<!--*Javascript:
-$('select[name=mtrl]').form-control();-->
 
-<!-- javascripten Jonne-->
+
+
+
+		<!--	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="32S2K4AYCZPZS">
+
+				<input type="hidden" name="item_name" value="{$row->name}">
+				<input type="hidden" name="item_number" value="{$row->productid}">
+				<input type="hidden" name="amount" value="{$row->price}">
+				<input type="hidden" id="colour1" name="item_color1" value="">
+				<input type="hidden" id="colour2" name="item_color2" value="">
+				<input type="hidden" id="size" name="item_stl" value="">
+				<input type="hidden" id="material" name="item_mtrl" value="">
+
+				<input type="image" src="https://www.paypalobjects.com/sv_SE/SE/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – ett tryggt och smidigt sätt att betala på nätet med.">
+				<img alt="" border="0" src="https://www.paypalobjects.com/sv_SE/i/scr/pixel.gif" width="1" height="1">
+			</form> -->
