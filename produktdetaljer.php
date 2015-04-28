@@ -4,11 +4,9 @@
 <script src="js/javascript.js"></script>
 <link href="lightbox/css/lightbox.css" rel="stylesheet" />
 
-
 <?php include'inc/head.php';?>
 <?php include'inc/template.php'; ?> 
 <?php include 'inc/nav.php'; ?>
-
 
 <?php
 
@@ -18,6 +16,7 @@ if(isset($_GET['productid']))
 	$query = <<<END
 	SELECT * FROM product_details
 	WHERE productid = '{$_GET['productid']}'
+
 END;
 
 $res = $mysqli->query($query);
@@ -46,7 +45,6 @@ END;
   }
 
 ?>
-
 
 <div class="container">
 	<div class="content">
