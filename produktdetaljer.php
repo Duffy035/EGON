@@ -17,7 +17,11 @@ if(isset($_GET['productid']))
 	$query = <<<END
 	SELECT * FROM product_details
 	WHERE productid = '{$_GET['productid']}'
+END;
 
+$query = <<<END
+	SELECT * FROM thumb_img
+	WHERE productid = '{$_GET['productid']}'
 END;
 
 $res = $mysqli->query($query);
@@ -33,11 +37,8 @@ if($res ->num_rows > 0)
 			
 			<div class="col-xs-4"> 
 				<div class="images">
-					<a href="img/Cobra.png" data-lightbox="img" data-title="Cobra armband"><img class="thumbimages" src="img/Cobra.png"></a>
-					<a href="img/Cobra6.png" data-lightbox="img" data-title="Cobraaa"><img class="thumbimages"src="img/Cobra6.png"></a>
-					<a href="img/img3.jpg" data-lightbox="Bilder" data-title="Vetenskapen påvisar: Ungdomar är sjukt biffiga nu för tiden"><img src="img/img3small.jpg"></a>
-					<a href="img/img4.png" data-lightbox="Bilder" data-title="Ny SM-mästare: Malin Skoghag"><img src="img/img4small.jpg"></a>
-						<!-- för att lägga till nya bilder, gör en ny rad som dessa ovan, byt a href till den stora bilden, och img src till tumnageln-->
+					<a href="{$row->thumbnail_link} data-title="Cobra armband"><img class="thumbimages" src="img/Cobra.png"></a>
+					
 				</div>
 				<p>{$row->description}</p>
 			</div>
