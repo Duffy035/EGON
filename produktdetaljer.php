@@ -5,7 +5,6 @@
 <link href="lightbox/css/lightbox.css" rel="stylesheet" />
 
 <?php include'inc/head.php';?>
-<?php include'inc/template.php'; ?> 
 <?php include 'inc/nav.php'; ?>
 
 <?php

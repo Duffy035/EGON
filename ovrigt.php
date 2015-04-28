@@ -1,5 +1,4 @@
 <?php include'inc/head.php';?>
-<?php include'inc/template.php'; ?>
 <?php include'inc/nav.php'; ?> 
 
 <div class="container">
