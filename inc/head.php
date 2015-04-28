@@ -1,4 +1,4 @@
-
+<?php include'template.php'; ?>
 
 <!doctype html>
 <html>
