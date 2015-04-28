@@ -19,12 +19,12 @@ if(isset($_GET['productid']))
 	WHERE productid = '{$_GET['productid']}'
 END;
 
-$query = <<<END
+$query1 = <<<END
 	SELECT * FROM thumb_img
 	WHERE productid = '{$_GET['productid']}'
 END;
 
-$res = $mysqli->query($query);
+$res = $mysqli->query($query, $query1);
 if($res ->num_rows > 0)
 {
 	$row = $res -> fetch_object();
