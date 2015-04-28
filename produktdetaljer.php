@@ -20,34 +20,37 @@ if(isset($_GET['productid']))
 
 END;
 
-$query = <<<END
-	SELECT * FROM product_details
-	WHERE productid = '{$_GET['productid']}'
+	$mysqli->query($query);
 
+	$query = <<<END
+	SELECT * FROM thumb_img
+	WHERE productid = '{$_GET['productid']}'
 END;
 
 $res = $mysqli->query($query);
 if($res ->num_rows > 0)
-{
+{	
+
 	$row = $res -> fetch_object();
+	while($row->thumbnail_link <= 3){
 
 	$content = <<<END
 
 		<div class="row" id="produktinfo">
   			<div class="col-xs-4">{$row->name}</div>
   			<div class="col-xs-6">{$row->price}</div>
+  			<div class="col-xs-6"><img src="{$row->imagelink}"></div>
 			
 			<div class="col-xs-4"> 
 				<div class="images">
-					<a href="{$row->imagelink}" data-lightbox="img" data-title="Cobra armband"><img class="thumbimages" src="{$row->thumbnail_link}"></a>
-					
+					<a href="{$row->thumbnail_link}" data-lightbox="img" data-title="Cobra armband"><img class="thumbimages" src="{$row->thumbnail_link}"></a>
 				</div>
 				<p>{$row->description}</p>
 			</div>
 		</div>
 END;
   }
-
+}
 ?>
 
 <div class="container">
