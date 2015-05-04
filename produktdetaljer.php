@@ -6,8 +6,8 @@
 
 <?php include'inc/head.php';?>
 <?php include'inc/template.php'; ?> 
-<?php include 'inc/nav.php'; ?>
-<?php include 'config.php'; ?>
+<?php include'inc/nav.php'; ?>
+<?php include'config.php'; ?>
 
 <?php
 
