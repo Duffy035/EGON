@@ -1,7 +1,6 @@
-<?php 
-	
-	include'inc/head.php';
-	include'inc/nav.php';
+<?php
+	include('inc/head.php');
+	include('inc/nav.php');
 
 $login = <<<END
 <div class="container">

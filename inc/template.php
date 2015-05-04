@@ -1,12 +1,7 @@
 <?php
-
-session_name('Paracord webbshop');
+session_name('Paracord_webbshop');
 session_start();
-session_regenerate_id();
-
-
-
+//session_regenerate_id();
 $mysqli = new mysqli("localhost", "root", "", "egon"); //Lägg in våra DB uppgifter
-$mysqli->set_charset("utf8"); 
-
+$mysqli->set_charset("utf8");
 ?>

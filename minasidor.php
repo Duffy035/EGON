@@ -1,8 +1,6 @@
 <?php 
-	include'inc/head.php';
-	include'inc/nav.php';
-	include'inc/template.php';
-
+	include('inc/head.php');
+	include('inc/nav.php');
 	$content = '';
 
 	if(isset($_GET['userid'])) {
@@ -19,7 +17,6 @@
 END;
 			$mysqli->query($query);
 		}
-
 		$query = <<<END
 		SELECT * FROM user
 		WHERE userid = '{$_GET['userid']}'
