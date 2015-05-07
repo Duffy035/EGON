@@ -20,45 +20,34 @@ if(isset($_GET['productid']))
 
 END;
 
-	$mysqli->query($query);
+	$res = $mysqli->query($query);
+	while($row = $res->fetch_object()){
 
-	$query = <<<END
-	SELECT * FROM thumb_img
-	WHERE productid = '{$_GET['productid']}'
-END;
+		$price = $row->price;
+		$name = $row->name;
+		$productid = $row->productid;
+		$imagelink = $row->imagelink;
+		$thumbnail_link = $row->thumbnail_link;
+		$description = $row->description;
+  }
 
-$res = $mysqli->query($query);
-if($res ->num_rows > 0)
-{	
-
-	$row = $res -> fetch_object();
-	while($row->thumbnail_link <= 3){
-
-	$content = <<<END
-
+?>
+ 
+<div class="container">
+	<div class="content">
 		<div class="row" id="produktinfo">
-  			<div class="col-xs-4">{$row->name}</div>
-  			<div class="col-xs-6">{$row->price}</div>
+  			<div class="col-xs-4"><?php echo $name ?></div>
+  			<div class="col-xs-6"><?php echo $price ?></div>
   			<div class="col-xs-6"><img src="{$row->imagelink}"></div>
 			
 			<div class="col-xs-4"> 
 				<div class="images">
 					<a href="{$row->thumbnail_link}" data-lightbox="img" data-title="Cobra armband"><img class="thumbimages" src="{$row->thumbnail_link}"></a>
 				</div>
-				<p>{$row->description}</p>
+				<p><?php echo $row ?></p>
 			</div>
 		</div>
-END;
-  }
-}
-?>
 
-<div class="container">
-	<div class="content">
-	<?php
-
-	echo $content;
-	?>
 		<div class="row">	
 			<div class="col-xs-2 col-md-offset-6">
 			<p>Färg 1</p>
@@ -122,7 +111,7 @@ END;
 				<input type="hidden" name="cmd" value="_xclick">
 				<input type="hidden" name="business" value="D4ZNRTM8G8FRQ">
 				<input type="hidden" name="lc" value="SE">
-				<input type="hidden" name="item_name" value="{$row->name}">
+				<input type="hidden" name="item_name" value="$name">
 				<input type="hidden" name="item_number" value="{$row->productid}">
 				<input type="hidden" name="amount_1" value="{$row->price}">
 				<input type="hidden" name="currency_code" value="SEK">
