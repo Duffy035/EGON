@@ -64,8 +64,8 @@
         <?php
           if (isset($_SESSION['userid'])) {
             echo "
-            <li><a href='#'>Mina sidor</a></li>
-            <li><a href='#'>Logout</a>
+            <li><a href='minasidor.php'>Mina sidor</a></li>
+            <li><a href='logout.php'>Logout</a></li>
             Inloggad som {$_SESSION['fname']}";
 }
 else

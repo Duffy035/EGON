@@ -20,18 +20,5 @@
 			<div id="banner">
 				<img class="img-responsive"><p> Paracord Fashion</p>
 			</div>
-			<div id="login">
-				<?php
-          if (isset($_SESSION['userid'])) {
-            echo "
-            <a href='produktdetaljer.php'>Logout</a>
-            Inloggad som {$_SESSION['fname']}";
-}
-else
-{
-  echo ' <a href="login.php">Logga in</a>';
-}
-        ?>
-			</div>
 	</div>
 </div>
