@@ -3,15 +3,15 @@
 	include('inc/nav.php');
 
 $login = <<<END
-<div class="container">
-<div class="content">
-<br>
-<h3>Redan medlem? Logga in här</h3>
-<form action="login.php" method="post">
-<input type="text" name="email" placeholder="E-postadress">
-<input type="password" name="password" placeholder="Lösenord">
-<input type="submit" value="Logga in">
-</form>
+	<div class="container">
+		<div class="content" id="login">
+			<br>
+			<h3>Redan medlem? Logga in här</h3>
+			<form action="login.php" method="post">
+				<input type="text" name="email" placeholder="E-postadress">
+				<input type="password" name="password" placeholder="Lösenord">
+				<input type="submit" value="Logga in">
+			</form>
 END;
 
 
@@ -42,18 +42,18 @@ $login .= '<hr>';
 
 $register = <<<END
 <h3>Registera dig här!</h3>
-<form action="login.php" method="post">
-<input type="text" name="email2" placeholder="E-postadress"><br><br>
-<input type="text" name="fname" placeholder="Förnamn"><br><br>
-<input type="text" name="lname" placeholder="Efternamn"><br><br>
-<input type="text" name="street" placeholder="Gatuadress"><br><br>
-<input type="number" name="zipcode" placeholder="Postnummer"><br><br>
-<input type="number" name="phone" placeholder="Telefonnummer"><br><br>
-<input type="password" name="password2" placeholder="Lösenord"><br><br>
-<input type="submit" value="Registera dig">
-</form>
-</div>
-</div>
+	<form action="login.php" method="post">
+		<input type="text" name="email2" placeholder="E-postadress"><br><br>
+		<input type="text" name="fname" placeholder="Förnamn"><br><br>
+		<input type="text" name="lname" placeholder="Efternamn"><br><br>
+		<input type="text" name="street" placeholder="Gatuadress"><br><br>
+		<input type="number" name="zipcode" placeholder="Postnummer"><br><br>
+		<input type="number" name="phone" placeholder="Telefonnummer"><br><br>
+		<input type="password" name="password2" placeholder="Lösenord"><br><br>
+		<input type="submit" value="Registera dig">
+	</form>
+		</div>
+	</div>
 END;
 
 if(isset($_POST['email2']))	

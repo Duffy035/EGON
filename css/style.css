@@ -23,7 +23,12 @@ body{
 
 .nav{
 	margin:auto;
-	width:700px;
+	width:900px;
+}
+.nav p{
+	color: yellow;
+	padding-top: 16px;
+	padding-left: 5px;
 }
 
 .navbar{
@@ -75,12 +80,12 @@ body{
 }
 
 #login{
-	margin-left: 85%;
+	text-align: center;
+}
+#login h3{
+	color: #E6E6E6;
 }
 
-#login a{
-	text-decoration: bold;
-}
 
 .content{
 	background-color:#373700;

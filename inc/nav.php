@@ -66,7 +66,7 @@
             echo "
             <li><a href='minasidor.php'>Mina sidor</a></li>
             <li><a href='logout.php'>Logout</a></li>
-            Inloggad som {$_SESSION['fname']}";
+            <p>Inloggad som {$_SESSION['fname']}</p>";
 }
 else
 {
