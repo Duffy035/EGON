@@ -61,6 +61,7 @@
     		<li><a href="ovrigt.php">Övrigt</a></li>
     		<li><a href="guide.php">Färg & stoleks guide</a></li>
     		<li><a href="kontakt.php">Kontakt</a></li>
+        <li><a href="kundvagn.php">Kundvagn</a></li>
         <?php
           if (isset($_SESSION['userid'])) {
             echo "

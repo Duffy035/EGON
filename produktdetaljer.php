@@ -11,18 +11,6 @@
 $knapp = "";
 $content = "";
 
-//-----------Kundvagn---------
-	foreach ($_SESSION['cart'] as $item => $cart_item) 
-	{
-		echo $cart_item["name"];
-		echo $cart_item["qty"];
-		echo $cart_item['price'] * $cart_item['qty'];
-	}
-
-//}
-
-
-//----------------------------
 
 if(isset($_GET['productid']))
 {
