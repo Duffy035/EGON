@@ -11,6 +11,40 @@
 $knapp = "";
 $content = "";
 if(isset($_GET['productid']))
+{
+	$id = $_GET['productid'];
+	$res = $mysqli->query("SELECT * FROM product_details where productid = '{$id}'");
+	$row = $res->fetch_object();
+	$add_product = array('productid' => $row->productid, 'price'=> $row->price, 'name' => $row->name, 'qty' =>1);
+
+	$exists = null;
+
+	foreach($_SESSION['cart']	as $item => $cart_item)
+	{
+		if($cart_item["$id"] == $productid)
+		{
+			$exists = true;
+			$_SESSION['cart'][$item]['qty']++;
+			break;
+		}
+	}
+	if($exists == null)
+	{
+		{
+			array_push($_SESSION['cart'], $add_product);
+		}
+	}
+
+	foreach ($_SESSION['cart'] as $item => $cart_item)
+	 {
+		echo $cart_item["name"];
+		echo $cart_item["qty"];
+	}
+}
+
+
+
+if(isset($_GET['productid']))
 
 	$query = <<<END
 	SELECT * FROM product_details
@@ -44,7 +78,7 @@ END;
   
   
 	$knapp .=<<<END
-		<a href="produktdetaljer.php?id={$row->productid}" class="btn btn-info">Lägg i varukorg</a><br>
+		<a href="produktdetaljer.php? productid={$row->productid}" class="btn btn-default" role="button">placera varan i kundkorg</a>
 END;
 	}
 
@@ -55,6 +89,7 @@ END;
 	<?php
 
 	echo $content;
+	echo $knapp;
 	?>
 		<div class="row">	
 			<div class="col-xs-2 col-md-offset-6">
@@ -106,7 +141,7 @@ END;
 				</select>
 			</div>
 		</div>
-<?php echo $knapp; ?>
+
 		<!--<div id="buy">
 			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 				<input type="hidden" name="cmd" value="_s-xclick">

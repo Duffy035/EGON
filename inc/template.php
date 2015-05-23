@@ -6,5 +6,10 @@ $mysqli = new mysqli("localhost", "root", "", "egon"); //Lägg in våra DB uppgi
 $mysqli->set_charset("utf8");
 
 //Session för kundvagn
-
+$ses_cart = false;
+if ($ses_cart == false)
+{
+	$_SESSION['cart'] = array();
+	$ses_cart = true;
+}
 ?>
