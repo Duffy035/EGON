@@ -1,19 +1,26 @@
+body{
+  background: url("../img/halsduk.png") repeat left top;
+  
+}
 
-.head{
+#head{
 	background-color: #3E3101;
+	height: 267px;
+}
+#head p{
+	padding-top: 70px;
+}
+	
+#logga{
+	float:left;
 }
 #banner{
 	font-family: 'Black Ops One', cursive;
-	float: right;
 	font-size: 60px;
-	margin-right: 300px;
-	margin-top: -10px;
-	text-shadow: 18px 18px 18px #000000;z
-
-}
-#banner p{
+	text-shadow: 18px 18px 18px #000000;
 	color:#FFCC00;
 }
+
 .nav{
 	margin:auto;
 	width:700px;
@@ -34,10 +41,6 @@
 	text-decoration: bold;
 	font-size: 16px;
 	text-align: auto;
-}
-
-#logga{
-	margin: -40px -5px -85px 0px;
 }
 
 #welcome{

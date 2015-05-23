@@ -14,11 +14,11 @@
 </head>
 
 <body>
-<div class="container">
-	<div class="head">
-		<img class="img-responsive" id="logga" src="img/loggaguul.png">
-			<div id="banner">
-				<img class="img-responsive"><p> Paracord Fashion</p>
-			</div>
+<div class="container" >
+	<div id="head">
+	
+		<img class="img-responsive" src="img/loggaguul.png"  id="logga">
+		<p id="banner"> Paracord Fashion</p>	
 	</div>
+
 </div>
