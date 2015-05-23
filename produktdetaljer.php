@@ -10,42 +10,22 @@
 <?php
 $knapp = "";
 $content = "";
-if(isset($_GET['productid']))
-{
-	$id = $_GET['productid'];
-	$res = $mysqli->query("SELECT * FROM product_details where productid = '{$id}'");
-	$row = $res->fetch_object();
-	$add_product = array('productid' => $row->productid, 'price'=> $row->price, 'name' => $row->name, 'qty' =>1);
 
-	$exists = null;
-
-	foreach($_SESSION['cart']	as $item => $cart_item)
+//-----------Kundvagn---------
+	foreach ($_SESSION['cart'] as $item => $cart_item) 
 	{
-		if($cart_item["$id"] == $productid)
-		{
-			$exists = true;
-			$_SESSION['cart'][$item]['qty']++;
-			break;
-		}
-	}
-	if($exists == null)
-	{
-		{
-			array_push($_SESSION['cart'], $add_product);
-		}
-	}
-
-	foreach ($_SESSION['cart'] as $item => $cart_item)
-	 {
 		echo $cart_item["name"];
 		echo $cart_item["qty"];
+		echo $cart_item['price'] * $cart_item['qty'];
 	}
-}
+
+//}
 
 
+//----------------------------
 
 if(isset($_GET['productid']))
-
+{
 	$query = <<<END
 	SELECT * FROM product_details
 	WHERE productid = '{$_GET['productid']}'
@@ -78,9 +58,10 @@ END;
   
   
 	$knapp .=<<<END
-		<a href="produktdetaljer.php? productid={$row->productid}" class="btn btn-default" role="button">placera varan i kundkorg</a>
+		<a href="add_to_cart.php?productid={$_GET['productid']}" class="btn btn-default" role="button">placera varan i kundkorg</a>
 END;
 	}
+}
 
 ?>
 
