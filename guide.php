@@ -1,7 +1,7 @@
 <?php include'inc/head.php';?>
 <?php include'inc/nav.php'; ?> 
 
-<div class="container">
+
 	<div class="content">
 		<div class="tajt">
 			<div class="row">
@@ -36,7 +36,7 @@
 			</div>
 		</div>	
 	</div>
-</div>
+</div> <!-- container från nav-->
 			
 </body>
 </html>

@@ -2,7 +2,7 @@
 <?php include'inc/nav.php'; ?> 
 <script src="js/javascript.js"></script>
 
-<div class="container">
+
 	<div class="content">	
 		<div class="mail">
 			<p> Skriv ett mail till mig om du har något du vill förtälja!</p>
@@ -27,4 +27,4 @@ mail($to, $subject, $msg, $headers);
 ?>
 
 	</div>
-</div>
+</div> <!-- container från nav-->

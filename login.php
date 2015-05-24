@@ -3,7 +3,7 @@
 	include('inc/nav.php');
 
 $login = <<<END
-	<div class="container">
+	
 		<div class="content" id="login">
 			<br>
 			<h3>Redan medlem? Logga in här</h3>
@@ -34,7 +34,7 @@ $res = $mysqli->query($query);
 	}
 	else
 	{
-		 echo '<div class="container"> Du angav fel användarnamn eller lösenord, vänligen prova igen.';
+		 echo ' Du angav fel användarnamn eller lösenord, vänligen prova igen.';
 	}
 }
 
