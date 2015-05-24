@@ -10,7 +10,7 @@ $login = <<<END
 			<form action="login.php" method="post">
 				<input type="text" name="email" placeholder="E-postadress">
 				<input type="password" name="password" placeholder="Lösenord">
-				<input type="submit" value="Logga in">
+				<input type="submit" value="Logga in" class="btn-default">
 			</form>
 END;
 
@@ -50,7 +50,7 @@ $register = <<<END
 		<input type="number" name="zipcode" placeholder="Postnummer"><br><br>
 		<input type="number" name="phone" placeholder="Telefonnummer"><br><br>
 		<input type="password" name="password2" placeholder="Lösenord"><br><br>
-		<input type="submit" value="Registera dig">
+		<input type="submit" value="Registera dig" class="btn-default">
 	</form>
 		
 	</div>

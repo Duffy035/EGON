@@ -5,7 +5,7 @@
 ?>
 
 
-    <div class="produktbg"> 
+    <div class="produktbg">
       <!--  <div id="products-wrapper">-->
             <h2>Produkter</h2>
                 <div class="products">
@@ -34,6 +34,7 @@
                 			echo '<input type="hidden" name="return_url" value="'.$current_url.'" />';
                             echo '</form>';
                             echo '</div>';
+
                         }
                     
                     }
@@ -69,4 +70,6 @@
                 </div>
     
     </div>
+    </div>
+    
 <?php include('inc/footer.php');?>

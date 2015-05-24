@@ -142,14 +142,13 @@ hr {
 
 
 .footer {
+	margin-top: 50px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-family: Verdana;
 	font-size: 12px;
-	color: white;
-	border-radius: 0px;
-	background: linear-gradient(#555500, #151000);	
-	border-style: none;
+	color: white;	
+	background: linear-gradient(#555500, #151000);		
 	text-align: center;
 }
 

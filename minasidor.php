@@ -37,7 +37,7 @@ END;
 					<input type="text" name="email" value="{$row->email}"><br>
 					<input type="text" name="phone" value="{$row->phone}"><br>
 					<input type="password" name="password" placeholder="Lösenord"><br>
-					<input type="submit" value="Spara">
+					<input type="submit" value="Spara" class="btn-default">
 				</form>
 				<p>Skriv in lösenord och tryck på Spara för ändra</p>
 			
