@@ -2,6 +2,7 @@
 	include('inc/head.php');
 	include('inc/nav.php');
 	include('js/javascript.js');
+	include('config.php');
 ?>
 
 
