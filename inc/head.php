@@ -14,17 +14,6 @@
 </head>
 
 <body>
-<style>
-@media screen and (max-width:992px) {
-    .navbar-brand{
-      display: none;
-    }
-}
-
-</style>
-
-
-
   <div class="container">
     <div id="head">
       <a class="navbar-brand" href="#">

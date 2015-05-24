@@ -1,26 +1,3 @@
-<style>
-@media screen and (max-width:768px) {
-    .subnav{
-      display: none;
-    }
-
-     #big{
-      display: none;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .small{
-      display: none;
-    }
-    
-}
-</style>
-
-
-
-
-
 <div class="container">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
