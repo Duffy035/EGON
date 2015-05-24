@@ -14,6 +14,28 @@
 </head>
 
 <body>
+<style>
+@media screen and (max-width:992px) {
+    .navbar-brand{
+      display: none;
+    }
+}
+
+</style>
+
+
+
+  <div class="container">
+    <div id="head">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="img/loggaguul.png" id="logga">
+      </a>
+      <p id="banner"> Paracord Fashion</p>
+    </div>
+  </div>
+
+
+<!--
 <div class="container" >
 	<div id="head">
 	
@@ -22,3 +44,4 @@
 	</div>
 
 </div>
+-->

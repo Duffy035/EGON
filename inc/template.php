@@ -1,7 +1,11 @@
 <?php
 session_name('Paracord_webbshop');
 session_start();
+<<<<<<< HEAD
 $currency = '$'; //Currency sumbol or code
+=======
+//session_regenerate_id();
+>>>>>>> origin/master
 //$mysqli = new mysqli("paracordfashion.se.mysql", "paracordfashion", "W6AqFUBB", "paracordfashion"); //Lägg in våra DB uppgifter
 
 $mysqli = new mysqli("localhost", "root", "", "egon"); //Lägg in våra DB uppgifter
