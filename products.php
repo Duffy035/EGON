@@ -3,15 +3,10 @@
 include('inc/head.php');
 include('inc/nav.php');
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Shopping Cart</title>
-<link href="css/style2.css" rel="stylesheet" type="text/css">
-</head>
 
-<body>
+<div class="container">
+<div class="produktbg">
+
 <div id="products-wrapper">
     <h1>Products</h1>
     <div class="products">
@@ -25,7 +20,8 @@ include('inc/nav.php');
         //fetch results set as object and output HTML
         while($obj = $results->fetch_object())
         {
-			echo '<div class="product">'; 
+            echo '<div class="product">'; 
+            echo'<div class="produktbg">';
             echo '<form method="post" action="cart_update.php">';
 			echo '<div class="product-thumb"><img src="images/'.$obj->product_img_name.'"></div>';
             echo '<div class="product-content"><h3>'.$obj->product_name.'</h3>';
@@ -39,6 +35,7 @@ include('inc/nav.php');
             echo '<input type="hidden" name="type" value="add" />';
 			echo '<input type="hidden" name="return_url" value="'.$current_url.'" />';
             echo '</form>';
+            echo '</div>';
             echo '</div>';
         }
     
@@ -73,8 +70,9 @@ if(isset($_SESSION["prods"]))
 }
 ?>
 </div>
-    
 </div>
-
+</div>    
+</div>
+</div>
 </body>
 </html>

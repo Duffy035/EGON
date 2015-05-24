@@ -1,10 +1,5 @@
-body {
-	background-color: #84C4B2;
-	font: 12px Arial, Helvetica, sans-serif;
-	color: #5E5E5E;
-}
+
 #products-wrapper {
-	width: 800px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -19,6 +14,7 @@ body {
 	background: #FFF;
 	padding: 15px;
 	min-height: 120px
+
 }
 .product .product-thumb {
 	float: left;

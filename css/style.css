@@ -24,6 +24,7 @@ body{
 
 .nav{
 	margin:auto;
+	width: 750px;
 }
 .nav p{
 	color: yellow;
@@ -63,21 +64,6 @@ body{
 	border-spacing: 40px 40px;
 }
 
-.subnav{
-	padding-top: 20px;
-	float: left;
-	
-}
-
-.subnav a{
-	color:#FFCC00;
-	margin-left: 10px;
-	text-decoration: none;
-}
-
-.subnav a:hover{
-	color:black;
-}
 
 #login{
 	text-align: center;
@@ -143,9 +129,6 @@ body{
 	text-align: center;
 }
 
-#buy{
-	margin-left: 70%;
-}
 
 hr {
 	border-width: 2px;
@@ -160,11 +143,6 @@ hr {
 	text-align: center;
 }
 
-.thumbimages {
-
-	width: 50px;
-	height: 50px;
-}
 
 .footer {
 	padding-top: 5px;
@@ -176,6 +154,10 @@ hr {
 	background: linear-gradient(#555500, #151000);	
 	border-style: none;
 	text-align: center;
+}
+.produktbg{
+	background-color:yellow;
+	width: inherit;
 }
 
 /*head*/

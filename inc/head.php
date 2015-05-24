@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/style2.css" rel="stylesheet" type="text/css">
+
   	<link href='http://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
   	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
   	<script type="text/javascript" src="js/bootstrap.min.js"></script>
