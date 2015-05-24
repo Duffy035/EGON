@@ -1,9 +1,9 @@
-<div id="footer" class="navbar">
-				<button onclick="myFunction()">Läs mer</button>
-				<script>
-				function myFunction() {
-				alert("Läs mer");
-				}
-				</script>
-
-				|<a>Det här är Slinkans hemsida, deal with it. Copyright 2015</a></div>
+<div class="footer">
+	<button onclick="myFunction()" class="btn btn-default">Sök samband</button>
+	<p>© Bilder Paracord Fashion. Utvecklare: System Error Copyright 2015</p>
+</div>
+<script>
+	function myFunction() {
+		alert("Du kan skicka ett meddelande från webbplatsen eller ringa på 0709757410 för speciella ordrar!");
+	}
+</script>

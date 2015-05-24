@@ -166,22 +166,18 @@ hr {
 	height: 50px;
 }
 
-#footer {
-	width: auto;
-	height: 60px;
-	background-color: #373700;	
-	text-align: left;
-	padding-top: 30px;
-	
-}
-
-#footer a{
+.footer {
+	padding-top: 5px;
+	padding-bottom: 5px;
 	font-family: Verdana;
 	font-size: 12px;
-	text-decoration: none;
 	color: white;
+	border-radius: 0px;
+	background: linear-gradient(#555500, #151000);	
+	border-style: none;
 	text-align: center;
 }
+
 /*head*/
 @media screen and (max-width:992px) {
     .navbar-brand{
