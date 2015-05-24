@@ -1,5 +1,5 @@
 <style>
-@media screen and (max-width: 480px) {
+@media screen and (max-width:768px) {
     .subnav{
       display: none;
     }
@@ -9,7 +9,7 @@
     }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
     .small{
       display: none;
     }

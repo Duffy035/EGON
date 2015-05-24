@@ -22,8 +22,7 @@ body{
 }
 
 .nav{
-	margin:auto;
-	width:900px;
+	width:auto;
 }
 .nav p{
 	color: yellow;
