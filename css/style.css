@@ -105,6 +105,7 @@ body{
 	margin: auto;
 	background-color:#373700;
 	padding: 0px;
+	color: #E6E6E6;
 }
 
 .guideimg{
@@ -198,9 +199,11 @@ hr {
 .product {
 	margin-bottom: 10px;
 	height: 100px;
-	background: #FFF;
+	background:#86722D; 
 	padding: 15px;
-	min-height: 120px
+	min-height: 120px;
+	border:solid;
+	border-color:#FFCC00;
 
 }
 .product .product-thumb {
@@ -225,14 +228,20 @@ hr {
 }
 
 /*** shopping cart **/
+#qty{
+	color:black;
+}
 .shopping-cart{
 	width: 30%;
 	float: left;
-	background: #FFF;
+	background: #86722D;
 	padding: 10px;
 }
+.shopping-cart a{
+	color: #E6E6E6;
+}
 .shopping-cart h2 {
-	background: #F0F7F2;
+	background: #3E3101;
 	padding: 8px;
 	margin: -10px -10px 5px;
 	font: 18px "Trebuchet MS", Arial;

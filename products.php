@@ -7,7 +7,7 @@
 
     <div class="produktbg"> 
       <!--  <div id="products-wrapper">-->
-            <h2>Products</h2>
+            <h2>Produkter</h2>
                 <div class="products">
                     <?php
                     //current URL of the Page. cart_update.php redirects back to this URL
@@ -26,8 +26,8 @@
                             echo '<div class="product-desc">'.$obj->product_desc.'</div>';
                             echo '<div class="product-info">';
                 			echo 'Price '.$currency.$obj->price.' | ';
-                            echo 'Qty <input type="text" name="product_qty" value="1" size="3" />';
-                			echo '<button class="add_to_cart">Add To Cart</button>';
+                            echo 'Qty <input type="text" name="product_qty" value="1" size="3" / id="qty">';
+                			echo '<button class="btn-default">Add To Cart</button>';
                 			echo '</div></div>';
                             echo '<input type="hidden" name="product_code" value="'.$obj->product_code.'" />';
                             echo '<input type="hidden" name="type" value="add" />';
@@ -69,10 +69,4 @@
                 </div>
     
     </div>
-    
-
-
-
-
-
 <?php include('inc/footer.php');?>
