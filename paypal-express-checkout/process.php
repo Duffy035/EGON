@@ -126,6 +126,7 @@ if(isset($_GET["token"]) && isset($_GET["PayerID"]))
         
 		// item price X quantity
         $subtotal = ($p_item['itm_price']*$p_item['itm_qty']);
+ 
 		
         //total price
         $ItemTotalPrice = ($ItemTotalPrice + $subtotal);
@@ -155,6 +156,7 @@ if(isset($_GET["token"]) && isset($_GET["PayerID"]))
 			echo '<h2>Success</h2>';
 			echo 'Your Transaction ID : '.urldecode($httpParsedResponseAr["PAYMENTINFO_0_TRANSACTIONID"]);
 			
+			
 				/*
 				//Sometimes Payment are kept pending even when transaction is complete. 
 				//hence we need to notify user about it and ask him manually approve the transiction
@@ -182,16 +184,20 @@ if(isset($_GET["token"]) && isset($_GET["PayerID"]))
 					echo '<br /><b>Stuff to store in database :</b><br />';
 					
 					echo '<pre>';
-					/*
-					#### SAVE BUYER INFORMATION IN DATABASE ###
+					
+					/*#### SAVE BUYER INFORMATION IN DATABASE ###
 					//see (http://www.sanwebe.com/2013/03/basic-php-mysqli-usage) for mysqli usage
 					//use urldecode() to decode url encoded strings.
 					
 					$buyerName = urldecode($httpParsedResponseAr["FIRSTNAME"]).' '.urldecode($httpParsedResponseAr["LASTNAME"]);
 					$buyerEmail = urldecode($httpParsedResponseAr["EMAIL"]);
+
+
+
+
 					
 					//Open a new connection to the MySQL server
-					$mysqli = new mysqli('host','username','password','database_name');
+					//$mysqli = new mysqli('localhost','root','','egon');
 					
 					//Output any connection error
 					if ($mysqli->connect_error) {
@@ -199,16 +205,16 @@ if(isset($_GET["token"]) && isset($_GET["PayerID"]))
 					}		
 					
 					$insert_row = $mysqli->query("INSERT INTO BuyerTable 
-					(BuyerName,BuyerEmail,TransactionID,ItemName,ItemNumber, ItemAmount,ItemQTY)
-					VALUES ('$buyerName','$buyerEmail','$transactionID','$ItemName',$ItemNumber, $ItemTotalPrice,$ItemQTY)");
+					(BuyerName,BuyerEmail,TransactionID,product_code,ItemQTY)
+					VALUES ('$buyerName','$buyerEmail','$transactionID','$product_code','$ItemQTY')");
 					
 					if($insert_row){
 						print 'Success! ID of last inserted record is : ' .$mysqli->insert_id .'<br />'; 
 					}else{
 						die('Error : ('. $mysqli->errno .') '. $mysqli->error);
 					}
-					
 					*/
+					
 					
 					echo '<pre>';
 					print_r($httpParsedResponseAr);

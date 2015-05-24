@@ -40,11 +40,30 @@ END;
 					<input type="submit" value="Spara">
 				</form>
 				<p>Skriv in lösenord och tryck på Spara för ändra</p>
-			</div>
+			
 END;
 		}
+		$content .= "<p>Din orderhistorik</p>";
+		$query = <<<END
+			SELECT * FROM order_row
+			WHERE userid = '{$_SESSION['userid']}'
+END;
+		$res = $mysqli->query($query);
+		if($res->num_rows > 0)
+		{
+			while($row = $res->fetch_object())
+			{
+				$content .= "<p>Datum: '{$row->created_at}'<br>
+							Produktkod: '{$row->product_code}'<br>
+							Antal: '{$row->ItemQTY}'<br>
+							Pris st: '{$row->cost}'<br>
+							Totalt pris:  $<hr>";
+			}
+		}
+
+		$content .= "</div>";
+
 	}
 
 	echo $content;
-	echo $_SESSION['userid'];
 ?>

@@ -2,7 +2,7 @@
 session_name('Paracord_webbshop');
 session_start();
 
-$currency = 'SEK'; //Currency sumbol or code
+$currency = '$'; //Currency sumbol or code
 
 //$mysqli = new mysqli("paracordfashion.se.mysql", "paracordfashion", "W6AqFUBB", "paracordfashion"); //Lägg in våra DB uppgifter
 
@@ -15,7 +15,7 @@ $PayPalMode 			= 'sandbox'; // sandbox or live
 $PayPalApiUsername 		= 'aadammzkii-facilitator_api1.gmail.com'; //PayPal API Username
 $PayPalApiPassword 		= '3BJTNYS7HWPQFXVL'; //Paypal API password
 $PayPalApiSignature 	= 'AAWSZexDWWJaWIqcYeGO7P--Tcc7AXbo3029V6IVdVacGI4VXnSUh.rw'; //Paypal API Signature
-$PayPalCurrencyCode 	= 'SEK'; //Paypal Currency Code
+$PayPalCurrencyCode 	= 'USD'; //Paypal Currency Code
 $PayPalReturnURL 		= 'http://localhost/EGON/paypal-express-checkout/process.php'; //Point to process.php page
 $PayPalCancelURL 		= 'http://localhost/EGON/paypal-express-checkout/cancel_url.html'; //Cancel URL if user clicks cancel
 

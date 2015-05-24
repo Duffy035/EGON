@@ -23,6 +23,7 @@ include('inc/template.php');
         {
            $product_code = $cart_itm["code"];
 		   $results = $mysqli->query("SELECT product_name,product_desc, price FROM products WHERE product_code='$product_code' LIMIT 1");
+
 		   $obj = $results->fetch_object();
 		   
 		    echo '<li class="cart-itm">';
@@ -42,6 +43,12 @@ include('inc/template.php');
 			echo '<input type="hidden" name="item_desc['.$cart_items.']" value="'.$obj->product_desc.'" />';
 			echo '<input type="hidden" name="item_qty['.$cart_items.']" value="'.$cart_itm["qty"].'" />';
 			$cart_items ++;
+
+			$query = <<<END
+				INSERT INTO order_row (userid,product_code,ItemQTY,cost)
+				VALUES ('{$_SESSION['userid']}','$product_code','{$cart_itm['qty']}','{$cart_itm['price']}')
+END;
+			$mysqli->query($query);
 			
         }
     	echo '</ul>';
