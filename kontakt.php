@@ -3,7 +3,6 @@
 <script src="js/javascript.js"></script>
 
 
-	<div class="content">	
 		<div class="mail">
 			<p> Skriv ett mail till mig om du har något du vill förtälja!</p>
 			<form action="kontakt.php" method="post">
@@ -25,7 +24,4 @@ $headers = "From: " . $_POST["name"];
 mail($to, $subject, $msg, $headers);
 
 ?>
-
-	</div>
-	<?php include'inc/footer.php'; ?> 
-<!--</div> container från nav-->
+<?php include'inc/footer.php'; ?> 

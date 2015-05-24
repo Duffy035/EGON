@@ -67,14 +67,12 @@
                     }
                     ?>
                 </div>
-     <!--   </div>-->
-        uhluhluhlkhkjfd sdksofkdsfl kkdsjglklg sdffkjdglfkdjlölfjd glfkjdglkfjlks jlkdjglkfd jglfkj fk lgjfdlkgfl kgjfljgfkj ghfdkjg hlfkdjghl 
-        fkdjghk fjdh gkfjdh gkjfdhgk fjhgkj dfhgkjfh dkgjh fdkjghfld skhgdfkjg hfdjk ghfjkhglk fh lkjgdfhl 
-        uhluhluhlkhkjfd sdksofkdsfl kkdsjglklg sdffkjdglfkdjlölfjd glfkjdglkfjlks jlkdjglkfd jglfkj fk lgjfdlkgfl kgjfljgfkj ghfdkjg hlfkdjghl 
-        fkdjghk fjdh gkfjdh gkjfdhgk fjhgkj dfhgkjfh dkgjh fdkjghfld skhgdfkjg hfdjk ghfjkhglk fh lkjgdfhl    
+    
     </div>
+    
 
 
-</div>
+
+
 
 <?php include('inc/footer.php');?>

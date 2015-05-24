@@ -2,7 +2,7 @@
 <?php include'inc/nav.php'; ?> 
 
 
-	<div class="content">
+
 		<div class="tajt">
 			<div class="row">
 				<div class="col-xs-4">
@@ -35,5 +35,5 @@
 				</div>
 			</div>
 		</div>	
-	</div>
+	
 <?php include'inc/footer.php'; ?> 
