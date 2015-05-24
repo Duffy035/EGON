@@ -19,10 +19,11 @@ body{
 	font-size: 60px;
 	text-shadow: 18px 18px 18px #000000;
 	color:#FFCC00;
+	text-align: center;
 }
 
 .nav{
-	width:auto;
+	margin:auto;
 }
 .nav p{
 	color: yellow;
