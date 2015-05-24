@@ -36,7 +36,4 @@
 			</div>
 		</div>	
 	</div>
-</div> <!-- container från nav-->
-			
-</body>
-</html>
+<?php include'inc/footer.php'; ?> 

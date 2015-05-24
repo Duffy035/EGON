@@ -74,7 +74,7 @@ body{
 
 
 .content{
-	background-color:#373700;
+	/*background-color:#373700;*/
 	width:auto;
 }
 
@@ -109,6 +109,8 @@ body{
 
 .container{
 	margin: auto;
+	background-color:#373700;
+	padding: 0px;
 }
 
 .guideimg{
@@ -155,12 +157,7 @@ hr {
 	border-style: none;
 	text-align: center;
 }
-.produktbg{
-	background-color:yellow;
-	margin-top: 0px;
-	padding-bottom: 40px;
-	height: 300px;
-}
+
 
 /*head*/
 @media screen and (max-width:992px) {
@@ -194,6 +191,11 @@ hr {
 	margin-right: auto;
 	margin-left: auto;
 }*/
+
+.produktbg{
+	padding: 25px;
+}
+
 .products {
 	width: 60%;
 	float:left;

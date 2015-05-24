@@ -27,4 +27,5 @@ mail($to, $subject, $msg, $headers);
 ?>
 
 	</div>
-</div> <!-- container från nav-->
+	<?php include'inc/footer.php'; ?> 
+<!--</div> container från nav-->

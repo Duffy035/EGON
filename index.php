@@ -1,6 +1,6 @@
 	<?php include'inc/head.php';?>
 	<?php include'inc/nav.php'; ?>
-	<div class="container">
+	
 		<div class="content"> 
 			<div id="welcome">
 				<p> Välkommen till Paracord Fashion!</p><br></div>

@@ -5,10 +5,9 @@
 ?>
 
 
-    <div class="produktbg">
-
+    <div class="produktbg"> 
       <!--  <div id="products-wrapper">-->
-            <h1>Products</h1>
+            <h2>Products</h2>
                 <div class="products">
                     <?php
                     //current URL of the Page. cart_update.php redirects back to this URL
@@ -74,6 +73,8 @@
         uhluhluhlkhkjfd sdksofkdsfl kkdsjglklg sdffkjdglfkdjlölfjd glfkjdglkfjlks jlkdjglkfd jglfkj fk lgjfdlkgfl kgjfljgfkj ghfdkjg hlfkdjghl 
         fkdjghk fjdh gkfjdh gkjfdhgk fjhgkj dfhgkjfh dkgjh fdkjghfld skhgdfkjg hfdjk ghfjkhglk fh lkjgdfhl    
     </div>
-</div> <!--Container från nav-->
-</body>
-</html>
+
+
+</div>
+
+<?php include('inc/footer.php');?>

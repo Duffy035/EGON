@@ -4,7 +4,7 @@
 
 $login = <<<END
 	
-		<div class="content" id="login">
+		<div id="login">
 			<br>
 			<h3>Redan medlem? Logga in här</h3>
 			<form action="login.php" method="post">
@@ -52,7 +52,7 @@ $register = <<<END
 		<input type="password" name="password2" placeholder="Lösenord"><br><br>
 		<input type="submit" value="Registera dig">
 	</form>
-		</div>
+		
 	</div>
 END;
 
@@ -68,5 +68,5 @@ header('Location:index.php');
 
 echo $login;
 echo $register;
-
+include('inc/footer.php'); 
 ?>

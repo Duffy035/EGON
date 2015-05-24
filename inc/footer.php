@@ -7,3 +7,6 @@
 		alert("Du kan skicka ett meddelande från webbplatsen eller ringa på 0709757410 för speciella ordrar!");
 	}
 </script>
+</div> <!--container från nav-->
+</body>
+</html>
