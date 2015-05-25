@@ -151,6 +151,14 @@ hr {
 	background: linear-gradient(#555500, #151000);		
 	text-align: center;
 }
+.myform{
+	color: black;
+}
+
+#minasidor{
+	width:200px;
+	margin: auto;
+}
 
 
 /*head*/

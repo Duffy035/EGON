@@ -28,15 +28,16 @@ END;
 		if($res->num_rows > 0) {
 			$row = $res->fetch_object();
 			$content .= <<<END
-			<div class="container">
-				<form method="post" action="minasidor.php">
+			<div id="minasidor">
+				<h3> Mina sidor </h3>
+				<form method="post" action="minasidor.php"  class="myform">
 					<input type="text" name="fname" value="{$row->fname}"><br>
 					<input type="text" name="lname" value="{$row->lname}"><br>
 					<input type="text" name="street" value="{$row->street}"><br>
 					<input type="text" name="zipcode" value="{$row->zipcode}"><br>
 					<input type="text" name="email" value="{$row->email}"><br>
 					<input type="text" name="phone" value="{$row->phone}"><br>
-					<input type="password" name="password" placeholder="Lösenord"><br>
+					<input type="password" name="password" placeholder="Lösenord"><br><br>
 					<input type="submit" value="Spara" class="btn-default">
 				</form>
 				<p>Skriv in lösenord och tryck på Spara för ändra</p>
