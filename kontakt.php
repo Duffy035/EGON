@@ -5,7 +5,7 @@
 
 		<div class="mail">
 			<p> Skriv ett mail till mig om du har något du vill förtälja!</p>
-			<form action="kontakt.php" method="post">
+			<form class="myform" action="kontakt.php" method="post">
 				<input type="text" name="name" placeholder="Namn">
 				<br>
 				<br>
