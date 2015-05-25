@@ -40,25 +40,27 @@ END;
 					<input type="password" name="password" placeholder="Lösenord"><br><br>
 					<input type="submit" value="Spara" class="btn-default">
 				</form>
-				<p>Skriv in lösenord och tryck på Spara för ändra</p>
+				<p>Skriv in lösenord och tryck på Spara för ändra</p><hr>
 			
 END;
 		}
-		$content .= "<p>Din orderhistorik</p>";
+		$content .= "<h3>Din orderhistorik</h3>";
 		$query = <<<END
 			SELECT * FROM order_row
 			WHERE userid = '{$_SESSION['userid']}'
 END;
+
 		$res = $mysqli->query($query);
 		if($res->num_rows > 0)
 		{
 			while($row = $res->fetch_object())
 			{
-				$content .= "<p>Datum: '{$row->created_at}'<br>
-							Produktkod: '{$row->product_code}'<br>
-							Antal: '{$row->ItemQTY}'<br>
-							Pris st: '{$row->cost}'<br>
-							Totalt pris:  $<hr>";
+				$total_price = $row->ItemQTY * $row->cost;
+				$content .= "<p>Datum: {$row->created_at}<br>
+							Produktkod: {$row->product_code}<br>
+							Antal: {$row->ItemQTY}<br>
+							Pris st: {$row->cost}<br>
+							Totalt pris:  {$total_price}<hr>";
 			}
 		}
 
