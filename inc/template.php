@@ -27,8 +27,8 @@ $PayPalApiUsername 		= 'aadammzkii-facilitator_api1.gmail.com'; //PayPal API Use
 $PayPalApiPassword 		= '3BJTNYS7HWPQFXVL'; //Paypal API password
 $PayPalApiSignature 	= 'AAWSZexDWWJaWIqcYeGO7P--Tcc7AXbo3029V6IVdVacGI4VXnSUh.rw'; //Paypal API Signature
 $PayPalCurrencyCode 	= 'USD'; //Paypal Currency Code
-$PayPalReturnURL 		= 'http://localhost/EGON/paypal-express-checkout/process.php'; //Point to process.php page
-$PayPalCancelURL 		= 'http://localhost/EGON/paypal-express-checkout/cancel_url.html'; //Cancel URL if user clicks cancel
+$PayPalReturnURL 		= 'http://www.paracordfashion.se/paypal-express-checkout/process.php'; //Point to process.php page
+$PayPalCancelURL 		= 'http://www.paracordfashion.se/paypal-express-checkout/cancel_url.html'; //Cancel URL if user clicks cancel
 
 //custom paypal settings
 /*$PayPalMode 			= 'sandbox'; // sandbox or live
