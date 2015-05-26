@@ -180,7 +180,7 @@ if(isset($_GET["token"]) && isset($_GET["PayerID"]))
 
 				if("SUCCESS" == strtoupper($httpParsedResponseAr["ACK"]) || "SUCCESSWITHWARNING" == strtoupper($httpParsedResponseAr["ACK"])) 
 				{
-					echo "<a href='localhost/EGON/minasidor.php'>Tillbaka till Paracordfashion</a>";
+					echo "<a href='http://www.paracordfashion.se/minasidor.php'>Tillbaka till Paracordfashion</a>";
 					echo '<br /><b>Stuff to store in database :</b><br />';
 					
 					echo '<pre>';
@@ -234,5 +234,5 @@ if(isset($_GET["token"]) && isset($_GET["PayerID"]))
 			echo '</pre>';
 	}
 }
-echo "<a href='www.google.se'>Dur</a>";
+echo "<a href='http://www.paracordfashion.se/minasidor.php'>Tillbaka till Paracordfashion</a>";
 ?>
