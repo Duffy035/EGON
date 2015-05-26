@@ -211,6 +211,7 @@ hr {
 	min-height: 120px;
 	border:solid;
 	border-color:#FFCC00;
+	height: auto;
 
 }
 .product .product-thumb {
@@ -219,8 +220,10 @@ hr {
 	width: 100px;
 	margin-right: 10px;
 }
+
 .product .product-content{
 	overflow:hidden;
+	height: auto;
 }
 .product .product-content h3 {
 	font: 18px "Trebuchet MS", Arial;
